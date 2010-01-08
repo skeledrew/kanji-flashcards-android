@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/card_layout"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:stretchColumns="0"
+    >
+ <TableRow
+     android:gravity="center"
+     android:layout_weight="100.0"
+     >
+  <TextView android:id="@+id/character"
+      android:textSize="70.0px"
+      android:textColor="#fff"
+      android:text="一"
+      android:gravity="bottom|center_horizontal"
+      android:layout_height="fill_parent"
+      />
+ </TableRow>
+ <TableRow
+     android:gravity="center"
+     android:layout_weight="100.0"
+     >
+  <LinearLayout
+    android:orientation="vertical"
+    android:layout_height="fill_parent"
+    >
+   <TextView android:id="@+id/onyomi"
+       android:textSize="20.0px"
+       android:textColor="#99F"
+       android:text="onyomi"
+       android:layout_height="wrap_content"
+       android:layout_width="fill_parent"
+       android:gravity="top|center_horizontal"
+       />
+   <TextView android:id="@+id/kunyomi"
+       android:textSize="18.0px"
+       android:textColor="#99F"
+       android:text="kunyomi"
+       android:layout_height="wrap_content"
+       android:layout_width="fill_parent"
+       android:gravity="top|center_horizontal"
+       />
+   <TextView android:id="@+id/english"
+       android:textSize="16.0px"
+       android:textColor="#EEE"
+       android:text="english"
+       android:layout_height="wrap_content"
+       android:layout_width="fill_parent"
+       android:gravity="top|center_horizontal"
+       />
+  </LinearLayout>
+ </TableRow>
+ <TableRow
+   android:layout_height="wrap_content"
+   android:layout_width="fill_parent">
+   <TableLayout
+     android:layout_height="wrap_content"
+     android:layout_width="fill_parent">
+     <TableRow
+      android:layout_height="wrap_content"
+      android:layout_width="fill_parent">
+      <Button android:id="@+id/no_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="no"
+      android:layout_weight="10.0"
+      />
+      <LinearLayout
+       android:layout_height="wrap_content"
+       android:layout_width="fill_parent"
+       android:layout_weight="100.0"
+       android:orientation="vertical">
+      <TextView android:id="@+id/kanji_number"
+       android:layout_height="wrap_content"
+       android:layout_width="fill_parent"
+       android:gravity="center"
+       android:text="1/20"
+        />
+      <ProgressBar android:id="@+id/overall_score"
+        android:indeterminateOnly="false" 
+        android:progressDrawable="@android:drawable/progress_horizontal" 
+        android:indeterminateDrawable="@android:drawable/progress_indeterminate_horizontal" 
+        android:minHeight="15dip" 
+        android:maxHeight="15dip"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="50"
+        android:secondaryProgress="0" />
+       </LinearLayout>
+      <Button android:id="@+id/yes_button"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="yes"
+      android:layout_weight="10.0"
+      />
+    </TableRow>
+   </TableLayout>
+ </TableRow>
+</TableLayout>

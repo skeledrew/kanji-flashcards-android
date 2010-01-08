@@ -1,0 +1,1297 @@
+<lessons>
+	<grade name="grade 1">
+		<card character="一" onyomi="ichi, itsu" kunyomi="hito-tsu" english="one"></card>
+		<card character="二" onyomi="ni, ji" kunyomi="futa-tsu" english="two"></card>
+		<card character="三" onyomi="san" kunyomi="mit-tsu" english="three"></card>
+		<card character="四" onyomi="shi, yon" kunyomi="yot-tsu" english="four"></card>
+		<card character="五" onyomi="go" kunyomi="itsu-tsu" english="five"></card>
+		<card character="六" onyomi="roku" kunyomi="mut-tsu" english="six"></card>
+		<card character="七" onyomi="shichi" kunyomi="nana-tsu" english="seven"></card>
+		<card character="八" onyomi="hachi" kunyomi="yat-tsu" english="eight"></card>
+		<card character="九" onyomi="ku, kyū" kunyomi="kokono-tsu" english="nine"></card>
+		<card character="十" onyomi="jū" kunyomi="tō" english="ten"></card>
+		<card character="百" onyomi="hyaku" kunyomi="momo" english="hundred"></card>
+		<card character="千" onyomi="sen" kunyomi="chi" english="thousand"></card>
+		<card character="上" onyomi="jō" kunyomi="ue" english="top"></card>
+		<card character="下" onyomi="ka, ge" kunyomi="shita" english="below"></card>
+		<card character="左" onyomi="sa" kunyomi="hidari" english="left"></card>
+		<card character="右" onyomi="u, yū" kunyomi="migi" english="right"></card>
+		<card character="中" onyomi="chū" kunyomi="naka" english="inside, middle"></card>
+		<card character="大" onyomi="dai" kunyomi="ō-kii" english="large"></card>
+		<card character="小" onyomi="shō" kunyomi="chii-sai" english="small"></card>
+		<card character="月" onyomi="gatsu, getsu" kunyomi="tsuki" english="month, moon"></card>
+		<card character="日" onyomi="nichi" kunyomi="hi" english="day, sun"></card>
+		<card character="年" onyomi="nen" kunyomi="toshi" english="year"></card>
+		<card character="早" onyomi="sō" kunyomi="haya-i" english="early"></card>
+		<card character="木" onyomi="moku" kunyomi="ki" english="tree"></card>
+		<card character="林" onyomi="rin" kunyomi="hiyashi" english="woods"></card>
+		<card character="山" onyomi="san" kunyomi="yama" english="mountain"></card>
+		<card character="川" onyomi="sen" kunyomi="kawa" english="river"></card>
+		<card character="土" onyomi="do" kunyomi="tsuchi" english="soil"></card>
+		<card character="空" onyomi="kū" kunyomi="sora" english="sky"></card>
+		<card character="田" onyomi="den" kunyomi="ta" english="rice paddy"></card>
+		<card character="天" onyomi="ten" kunyomi="ama" english="sky"></card>
+		<card character="生" onyomi="sei" kunyomi="i-kiru" english="life"></card>
+		<card character="花" onyomi="ka" kunyomi="hana" english="flower"></card>
+		<card character="草" onyomi="sō" kunyomi="kusa" english="grass"></card>
+		<card character="虫" onyomi="chū" kunyomi="mushi" english="insect"></card>
+		<card character="犬" onyomi="ken" kunyomi="inu" english="dog"></card>
+		<card character="人" onyomi="jin, nin" kunyomi="hito" english="person"></card>
+		<card character="名" onyomi="mei, myō" kunyomi="na" english="name"></card>
+		<card character="女" onyomi="jo, nyo" kunyomi="hito" english="female"></card>
+		<card character="男" onyomi="dan" kunyomi="otoko" english="male"></card>
+		<card character="子" onyomi="shi, su" kunyomi="ko" english="child"></card>
+		<card character="目" onyomi="moku" kunyomi="me" english="eye"></card>
+		<card character="耳" onyomi="ji, jō" kunyomi="mimi" english="ear"></card>
+		<card character="口" onyomi="kō" kunyomi="kuchi" english="mouth"></card>
+		<card character="手" onyomi="shu" kunyomi="te" english="hand"></card>
+		<card character="足" onyomi="soku" kunyomi="ashi" english="foot, leg"></card>
+		<card character="見" onyomi="ken" kunyomi="mi-ru" english="see"></card>
+		<card character="音" onyomi="on" kunyomi="ne, oto" english="sound"></card>
+		<card character="力" onyomi="riki, ryoku" kunyomi="chikara" english="power"></card>
+		<card character="気" onyomi="ki" kunyomi="iki" english="spirit"></card>
+		<card character="円" onyomi="en" kunyomi="maru" english="circle, yen"></card>
+		<card character="入" onyomi="nyū" kunyomi="hai-ru, i-ru" english="enter"></card>
+		<card character="出" onyomi="shutsu" kunyomi="de-ru" english="exit"></card>
+		<card character="立" onyomi="ritsu" kunyomi="ta-tsu" english="stand up"></card>
+		<card character="休" onyomi="kyū" kunyomi="yasu-mu" english="rest"></card>
+		<card character="先" onyomi="sen" kunyomi="saki" english="previous"></card>
+		<card character="夕" onyomi="seki" kunyomi="yū" english="evening"></card>
+		<card character="本" onyomi="hon" kunyomi="moto" english="book"></card>
+		<card character="文" onyomi="bun, mon" kunyomi="fumi" english="writing"></card>
+		<card character="字" onyomi="ji" kunyomi="" english="character"></card>
+		<card character="学" onyomi="gaku" kunyomi="mana-bu" english="study"></card>
+		<card character="校" onyomi="kō" kunyomi="" english="school"></card>
+		<card character="村" onyomi="son" kunyomi="mura" english="village"></card>
+		<card character="町" onyomi="chō" kunyomi="machi" english="town"></card>
+		<card character="森" onyomi="shin" kunyomi="mori" english="forest"></card>
+		<card character="正" onyomi="sei" kunyomi="tada-shii" english="correct"></card>
+		<card character="水" onyomi="sui" kunyomi="mizu" english="water"></card>
+		<card character="火" onyomi="ka" kunyomi="hi" english="fire"></card>
+		<card character="玉" onyomi="gyoku" kunyomi="tama" english="precious stone"></card>
+		<card character="王" onyomi="ō" kunyomi="" english="king"></card>
+		<card character="石" onyomi="seki" kunyomi="ishi" english="stone"></card>
+		<card character="竹" onyomi="chiku" kunyomi="take" english="bamboo"></card>
+		<card character="糸" onyomi="shi" kunyomi="ito" english="thread"></card>
+		<card character="貝" onyomi="" kunyomi="kai" english="shellfish"></card>
+		<card character="車" onyomi="sha" kunyomi="kuruma" english="wheeled vehicle"></card>
+		<card character="金" onyomi="kin" kunyomi="kane" english="gold"></card>
+		<card character="雨" onyomi="u" kunyomi="ame" english="rain"></card>
+		<card character="赤" onyomi="seki" kunyomi="aka" english="red"></card>
+		<card character="青" onyomi="sei" kunyomi="ao" english="blue"></card>
+		<card character="白" onyomi="haku" kunyomi="shiro" english="white"></card></grade>
+	<grade name="grade 2">
+		<card character="数" onyomi="sū" kunyomi="kazu" english="number"></card>
+		<card character="多" onyomi="ta" kunyomi="ō-i" english="many, much"></card>
+		<card character="少" onyomi="shō" kunyomi="suku-nai, suko-shi" english="a few, a little"></card>
+		<card character="万" onyomi="man" kunyomi="yorozu" english="ten thousand"></card>
+		<card character="半" onyomi="han" kunyomi="naka-ba" english="half"></card>
+		<card character="形" onyomi="kei" kunyomi="katachi" english="shape"></card>
+		<card character="太" onyomi="ta" kunyomi="futo-i" english="fat"></card>
+		<card character="細" onyomi="sai" kunyomi="hoso-i" english="thin"></card>
+		<card character="広" onyomi="kō" kunyomi="hiro-i" english="wide"></card>
+		<card character="長" onyomi="chō" kunyomi="naga-i" english="long"></card>
+		<card character="点" onyomi="ten" kunyomi="" english="point"></card>
+		<card character="丸" onyomi="gan" kunyomi="maru" english="circle"></card>
+		<card character="交" onyomi="kō" kunyomi="maji-waru" english="mix"></card>
+		<card character="光" onyomi="kō" kunyomi="hikari" english="light"></card>
+		<card character="角" onyomi="kaku" kunyomi="kado, tsuno, sumi" english="angle, corner"></card>
+		<card character="計" onyomi="kei" kunyomi="haka-run" english="measure"></card>
+		<card character="直" onyomi="choku, jiki" kunyomi="tada-chi,nao-su" english="straight, connect"></card>
+		<card character="線" onyomi="sen" kunyomi="" english="line"></card>
+		<card character="矢" onyomi="shi" kunyomi="ya" english="arrow"></card>
+		<card character="弱" onyomi="jaku" kunyomi="yowa-i" english="weak"></card>
+		<card character="強" onyomi="kyō" kunyomi="suyo-i" english="strong"></card>
+		<card character="高" onyomi="kō" kunyomi="taka-i" english="tall, high"></card>
+		<card character="同" onyomi="dō" kunyomi="ona-ji" english="same"></card>
+		<card character="親" onyomi="shin" kunyomi="oya" english="parent"></card>
+		<card character="母" onyomi="bo" kunyomi="haha, kaa" english="mother"></card>
+		<card character="父" onyomi="fu" kunyomi="chichi, tou" english="father"></card>
+		<card character="姉" onyomi="shi" kunyomi="ane" english="older sister"></card>
+		<card character="兄" onyomi="kei" kunyomi="ani" english="older brother"></card>
+		<card character="弟" onyomi="tei" kunyomi="otouto" english="younger brother"></card>
+		<card character="妹" onyomi="mai" kunyomi="imōto" english="younger sister"></card>
+		<card character="自" onyomi="ji, shi" kunyomi="mizuka-ra" english="oneself"></card>
+		<card character="友" onyomi="yū" kunyomi="tomo" english="friend"></card>
+		<card character="体" onyomi="tai" kunyomi="karada" english="body"></card>
+		<card character="毛" onyomi="mō" kunyomi="ke" english="hair"></card>
+		<card character="頭" onyomi="tō" kunyomi="atama" english="head"></card>
+		<card character="顔" onyomi="gan" kunyomi="kao" english="face"></card>
+		<card character="首" onyomi="shu" kunyomi="kubi" english="neck"></card>
+		<card character="心" onyomi="shin" kunyomi="kokoro" english="heart"></card>
+		<card character="時" onyomi="ji" kunyomi="toki" english="time"></card>
+		<card character="曜" onyomi="yō" kunyomi="" english="weekday"></card>
+		<card character="朝" onyomi="chō" kunyomi="asa" english="morning"></card>
+		<card character="昼" onyomi="chū" kunyomi="hiru" english="daytime"></card>
+		<card character="夜" onyomi="ya" kunyomi="yoru" english="night"></card>
+		<card character="分" onyomi="fun, bun" kunyomi="wa-kuru" english="minute, understand"></card>
+		<card character="週" onyomi="shū" kunyomi="" english="week"></card>
+		<card character="春" onyomi="shun" kunyomi="haru" english="spring"></card>
+		<card character="夏" onyomi="ka" kunyomi="natsu" english="summer"></card>
+		<card character="秋" onyomi="shū" kunyomi="aki" english="autumn"></card>
+		<card character="冬" onyomi="tō" kunyomi="fuyu" english="winter"></card>
+		<card character="今" onyomi="kon" kunyomi="ima" english="now"></card>
+		<card character="新" onyomi="shin" kunyomi="atara-shii" english="new"></card>
+		<card character="古" onyomi="ko" kunyomi="furu-i" english="old"></card>
+		<card character="間" onyomi="kan, ken" kunyomi="ma, aida" english="interval"></card>
+		<card character="方" onyomi="hō" kunyomi="kata" english="direction"></card>
+		<card character="北" onyomi="hoku" kunyomi="kita" english="north"></card>
+		<card character="南" onyomi="nan" kunyomi="minami" english="south"></card>
+		<card character="東" onyomi="tō" kunyomi="higashi, azuma" english="east"></card>
+		<card character="西" onyomi="sei, sai" kunyomi="nishi" english="west"></card>
+		<card character="遠" onyomi="en" kunyomi="tō-i" english="far"></card>
+		<card character="近" onyomi="kin" kunyomi="chika-i" english="near"></card>
+		<card character="前" onyomi="zen" kunyomi="mae" english="in front"></card>
+		<card character="後" onyomi="go, kou" kunyomi="nochi, ushi-ro, ato" english="behind"></card>
+		<card character="内" onyomi="nai" kunyomi="uchi" english="inside"></card>
+		<card character="外" onyomi="gai, ge" kunyomi="soto, hoka, hazu-su" english="outside"></card>
+		<card character="場" onyomi="jō" kunyomi="ba" english="place"></card>
+		<card character="地" onyomi="chi, ji" kunyomi="" english="ground"></card>
+		<card character="国" onyomi="koku" kunyomi="kuni" english="country"></card>
+		<card character="園" onyomi="en" kunyomi="sono" english="garden"></card>
+		<card character="谷" onyomi="koku" kunyomi="tani" english="valley"></card>
+		<card character="野" onyomi="ya" kunyomi="no" english="field"></card>
+		<card character="原" onyomi="gen" kunyomi="hara" english="field, origin"></card>
+		<card character="里" onyomi="ri" kunyomi="sato" english="village"></card>
+		<card character="市" onyomi="shi" kunyomi="ichi" english="city"></card>
+		<card character="京" onyomi="kyō, kei" kunyomi="" english="capital"></card>
+		<card character="風" onyomi="fū" kunyomi="kaze" english="wind"></card>
+		<card character="雪" onyomi="setsu" kunyomi="yuki" english="snow"></card>
+		<card character="雲" onyomi="un" kunyomi="kumo" english="cloud"></card>
+		<card character="池" onyomi="chi" kunyomi="ike" english="earth"></card>
+		<card character="海" onyomi="kai" kunyomi="umi" english="sea"></card>
+		<card character="岩" onyomi="gan" kunyomi="iwa" english="rock"></card>
+		<card character="星" onyomi="sei" kunyomi="hoshi" english="star"></card>
+		<card character="室" onyomi="shitsu" kunyomi="muro" english="room"></card>
+		<card character="戸" onyomi="ko" kunyomi="to, be" english="door"></card>
+		<card character="家" onyomi="ka, ke" kunyomi="ie" english="house"></card>
+		<card character="寺" onyomi="ji" kunyomi="tera" english="Buddhist temple"></card>
+		<card character="通" onyomi="tsū" kunyomi="tō-ru" english="pass through"></card>
+		<card character="門" onyomi="mon" kunyomi="kado" english="gate"></card>
+		<card character="道" onyomi="dō" kunyomi="michi" english="road"></card>
+		<card character="話" onyomi="wa" kunyomi="hanashi" english="talk"></card>
+		<card character="言" onyomi="gen, gon" kunyomi="i-u, koto" english="say"></card>
+		<card character="答" onyomi="tō" kunyomi="kota-eru" english="answer"></card>
+		<card character="声" onyomi="sei" kunyomi="koe" english="voice"></card>
+		<card character="聞" onyomi="bun, mon" kunyomi="ki-ku" english="hear"></card>
+		<card character="語" onyomi="go" kunyomi="kata-ru" english="language"></card>
+		<card character="読" onyomi="doku" kunyomi="yo-mu" english="read"></card>
+		<card character="書" onyomi="sho" kunyomi="ka-ku" english="write"></card>
+		<card character="記" onyomi="ki" kunyomi="shiru-su" english="write down"></card>
+		<card character="紙" onyomi="shi" kunyomi="kami" english="paper"></card>
+		<card character="画" onyomi="ga, kaku" kunyomi="" english="picture"></card>
+		<card character="絵" onyomi="kai" kunyomi="e" english="picture"></card>
+		<card character="図" onyomi="zu" kunyomi="haka-ru" english="drawing"></card>
+		<card character="工" onyomi="kō, ku" kunyomi="" english="craft"></card>
+		<card character="教" onyomi="kyō" kunyomi="oshi-eru" english="teach"></card>
+		<card character="晴" onyomi="sei" kunyomi="hare" english="fine"></card>
+		<card character="思" onyomi="shi" kunyomi="omo-u" english="think"></card>
+		<card character="考" onyomi="kō" kunyomi="kanga-eru" english="think about"></card>
+		<card character="知" onyomi="chi" kunyomi="shi-ru" english="know"></card>
+		<card character="才" onyomi="sai, zai" kunyomi="wazukani, zae" english="ability"></card>
+		<card character="理" onyomi="ri" kunyomi="kotowari" english="reason"></card>
+		<card character="算" onyomi="san" kunyomi="" english="calculate"></card>
+		<card character="作" onyomi="saku" kunyomi="tsuku-ru" english="make"></card>
+		<card character="元" onyomi="gen, gan" kunyomi="moto" english="origin"></card>
+		<card character="食" onyomi="shoku" kunyomi="ta-beru, ku-u" english="eat, meal"></card>
+		<card character="肉" onyomi="niku" kunyomi="" english="meat"></card>
+		<card character="馬" onyomi="ba" kunyomi="uma, ma" english="horse"></card>
+		<card character="牛" onyomi="gyū" kunyomi="ushi" english="cow"></card>
+		<card character="魚" onyomi="gyo" kunyomi="uo, sakana" english="fish"></card>
+		<card character="鳥" onyomi="chō" kunyomi="tori" english="bird"></card>
+		<card character="羽" onyomi="u" kunyomi="ha, hane" english="feather"></card>
+		<card character="鳴" onyomi="mei" kunyomi="na-ku" english="chirp"></card>
+		<card character="麦" onyomi="baku" kunyomi="mugi" english="wheat"></card>
+		<card character="米" onyomi="bei, mai" kunyomi="kome" english="rice"></card>
+		<card character="茶" onyomi="cha, sa" kunyomi="" english="tea"></card>
+		<card character="色" onyomi="shoku" kunyomi="iro" english="colour"></card>
+		<card character="黄" onyomi="ō" kunyomi="ki" english="yellow"></card>
+		<card character="黒" onyomi="koku" kunyomi="kuro" english="black"></card>
+		<card character="来" onyomi="rai" kunyomi="ku-ru" english="come"></card>
+		<card character="行" onyomi="kō, gyō" kunyomi="i-ku, yu-ku, okonau" english="go"></card>
+		<card character="帰" onyomi="ki" kunyomi="kae-ru" english="return home"></card>
+		<card character="歩" onyomi="ho" kunyomi="aru-ku, ayu-mu" english="walk"></card>
+		<card character="走" onyomi="sō" kunyomi="hashi-ru" english="run"></card>
+		<card character="止" onyomi="shi" kunyomi="to-maru" english="stop"></card>
+		<card character="活" onyomi="katsu" kunyomi="i-kiru" english="active"></card>
+		<card character="店" onyomi="ten" kunyomi="mise" english="store"></card>
+		<card character="買" onyomi="bai" kunyomi="ka-u" english="buy"></card>
+		<card character="売" onyomi="bai" kunyomi="u-ru" english="sell"></card>
+		<card character="午" onyomi="go" kunyomi="uma" english="noon"></card>
+		<card character="汽" onyomi="ki" kunyomi="" english="steam"></card>
+		<card character="弓" onyomi="kyū" kunyomi="yumi" english="bow"></card>
+		<card character="回" onyomi="kai" kunyomi="" english="times, to revolve"></card>
+		<card character="会" onyomi="kai" kunyomi="e" english="association"></card>
+		<card character="組" onyomi="so" kunyomi="kumi" english="association, team"></card>
+		<card character="船" onyomi="sen" kunyomi="fune" english="ship"></card>
+		<card character="明" onyomi="mei" kunyomi="aka-rui" english="bright"></card>
+		<card character="社" onyomi="sha" kunyomi="yashiro" english="company"></card>
+		<card character="切" onyomi="setsu" kunyomi="ku-ru" english="cut"></card>
+		<card character="電" onyomi="den" kunyomi="" english="electricity"></card>
+		<card character="毎" onyomi="mai" kunyomi="" english="every"></card>
+		<card character="合" onyomi="gō" kunyomi="a-u" english="fit"></card>
+		<card character="当" onyomi="tō" kunyomi="a-taru" english="hit"></card>
+		<card character="台" onyomi="dai, tai" kunyomi="" english="base"></card>
+		<card character="楽" onyomi="raku" kunyomi="tano-shii" english="pleasure"></card>
+		<card character="公" onyomi="kou" kunyomi="ōyake" english="public"></card>
+		<card character="引" onyomi="in" kunyomi="hi-ku" english="pull"></card>
+		<card character="科" onyomi="ka" kunyomi="" english="section"></card>
+		<card character="歌" onyomi="ka" kunyomi="uta" english="song"></card>
+		<card character="刀" onyomi="tō" kunyomi="katana" english="sword"></card>
+		<card character="番" onyomi="ban" kunyomi="" english="number"></card>
+		<card character="用" onyomi="yō" kunyomi="mochi-iru" english="use"></card>
+		<card character="何" onyomi="ka" kunyomi="nani, nan" english="what"></card></grade>
+	<grade name="grade 3">
+		<card character="丁" onyomi="chō" kunyomi="" english="pair"></card>
+		<card character="世" onyomi="sei, se" kunyomi="yo" english="world"></card>
+		<card character="両" onyomi="ryō" kunyomi="" english="both"></card>
+		<card character="主" onyomi="shu" kunyomi="nushi, omo" english="master"></card>
+		<card character="乗" onyomi="jō" kunyomi="no-ru" english="ride"></card>
+		<card character="予" onyomi="yo" kunyomi="" english="in advance"></card>
+		<card character="事" onyomi="ji" kunyomi="koto" english="abstract thing"></card>
+		<card character="仕" onyomi="shi" kunyomi="tsuka-eru" english="serve"></card>
+		<card character="他" onyomi="ta" kunyomi="hoka" english="other"></card>
+		<card character="代" onyomi="dai, tai" kunyomi="kawa-ru, yo" english="substitute"></card>
+		<card character="住" onyomi="jū" kunyomi="su-mu" english="dwell"></card>
+		<card character="使" onyomi="shi" kunyomi="tsuka-u" english="use"></card>
+		<card character="係" onyomi="kei" kunyomi="kakari, kaka-ru" english="person in charge"></card>
+		<card character="倍" onyomi="bai" kunyomi="" english="double"></card>
+		<card character="全" onyomi="zen" kunyomi="matta-ku" english="whole"></card>
+		<card character="具" onyomi="gu" kunyomi="" english="tool"></card>
+		<card character="写" onyomi="sha" kunyomi="utsu-su" english="copy"></card>
+		<card character="列" onyomi="retsu" kunyomi="" english="row"></card>
+		<card character="助" onyomi="jo" kunyomi="tasu-keru" english="help"></card>
+		<card character="勉" onyomi="ben" kunyomi="" english="diligence"></card>
+		<card character="動" onyomi="dō" kunyomi="ugo-ku" english="move"></card>
+		<card character="勝" onyomi="shō" kunyomi="ka-tsu" english="win"></card>
+		<card character="化" onyomi="ka" kunyomi="ba-keru" english="disguise"></card>
+		<card character="区" onyomi="ku" kunyomi="" english="ward"></card>
+		<card character="医" onyomi="i" kunyomi="" english="doctor"></card>
+		<card character="去" onyomi="kyo, ko" kunyomi="sa-ru" english="leave"></card>
+		<card character="反" onyomi="han" kunyomi="so-ru" english="anti-"></card>
+		<card character="取" onyomi="shu" kunyomi="to-ru" english="take"></card>
+		<card character="受" onyomi="ju" kunyomi="u-keru" english="receive"></card>
+		<card character="号" onyomi="gō" kunyomi="" english="number"></card>
+		<card character="向" onyomi="kō" kunyomi="mu-kau" english="to face"></card>
+		<card character="君" onyomi="kun" kunyomi="kimi" english="you"></card>
+		<card character="味" onyomi="mi" kunyomi="aji, aji-wau" english="flavor"></card>
+		<card character="命" onyomi="mei" kunyomi="inochi" english="life"></card>
+		<card character="和" onyomi="wa" kunyomi="" english="peace, sum"></card>
+		<card character="品" onyomi="hin" kunyomi="shina" english="article"></card>
+		<card character="員" onyomi="in" kunyomi="" english="member"></card>
+		<card character="商" onyomi="shō" kunyomi="" english="commerce"></card>
+		<card character="問" onyomi="mon" kunyomi="to-u, ton" english="question"></card>
+		<card character="坂" onyomi="" kunyomi="saka" english="slope"></card>
+		<card character="央" onyomi="ō" kunyomi="" english="center"></card>
+		<card character="始" onyomi="shi" kunyomi="haji-meru" english="begin"></card>
+		<card character="委" onyomi="i" kunyomi="" english="committee"></card>
+		<card character="守" onyomi="shu" kunyomi="mamo-ru" english="protect"></card>
+		<card character="安" onyomi="an" kunyomi="yasu-i" english="cheap"></card>
+		<card character="定" onyomi="tei, jō" kunyomi="sada-meru" english="fix"></card>
+		<card character="実" onyomi="jitsu" kunyomi="mi, mino-ru" english="fruit, content"></card>
+		<card character="客" onyomi="kyaku" kunyomi="" english="guest"></card>
+		<card character="宮" onyomi="kyū" kunyomi="miya" english="Shinto shrine, prince, princess"></card>
+		<card character="宿" onyomi="shuku" kunyomi="yado, yado-ru" english="inn"></card>
+		<card character="寒" onyomi="kan" kunyomi="samu-i" english="cold"></card>
+		<card character="対" onyomi="tai" kunyomi="" english="opposite"></card>
+		<card character="局" onyomi="kyoku" kunyomi="" english="office"></card>
+		<card character="屋" onyomi="oku" kunyomi="ya" english="premise"></card>
+		<card character="岸" onyomi="gan" kunyomi="kishi" english="shore"></card>
+		<card character="島" onyomi="tō" kunyomi="shima" english="island"></card>
+		<card character="州" onyomi="shū" kunyomi="" english="state"></card>
+		<card character="帳" onyomi="chō" kunyomi="" english="account book"></card>
+		<card character="平" onyomi="hei, byō" kunyomi="tai-ra, hira" english="flat"></card>
+		<card character="幸" onyomi="kō" kunyomi="saiwa-i, shiawa-se" english="happiness"></card>
+		<card character="度" onyomi="do" kunyomi="" english="degrees"></card>
+		<card character="庫" onyomi="ko" kunyomi="" english="warehouse"></card>
+		<card character="庭" onyomi="tei" kunyomi="niwa" english="garden"></card>
+		<card character="式" onyomi="shiki" kunyomi="" english="style"></card>
+		<card character="役" onyomi="yaku" kunyomi="" english="role"></card>
+		<card character="待" onyomi="tai" kunyomi="ma-tsu" english="wait"></card>
+		<card character="急" onyomi="kyū" kunyomi="iso-gu" english="hurry"></card>
+		<card character="息" onyomi="soku" kunyomi="iki" english="breath"></card>
+		<card character="悪" onyomi="aku" kunyomi="waru-i" english="bad"></card>
+		<card character="悲" onyomi="hi" kunyomi="kana-shii" english="sad"></card>
+		<card character="想" onyomi="sō" kunyomi="" english="thought"></card>
+		<card character="意" onyomi="i" kunyomi="" english="idea"></card>
+		<card character="感" onyomi="kan" kunyomi="" english="feel"></card>
+		<card character="所" onyomi="sho" kunyomi="tokoro" english="place"></card>
+		<card character="打" onyomi="da" kunyomi="u-tsu" english="hit"></card>
+		<card character="投" onyomi="tō" kunyomi="na-geru" english="throw"></card>
+		<card character="拾" onyomi="" kunyomi="hiro-u" english="pick up"></card>
+		<card character="持" onyomi="ji" kunyomi="mo-tsu" english="hold"></card>
+		<card character="指" onyomi="shi" kunyomi="yubi, sa-su" english="finger"></card>
+		<card character="放" onyomi="hō" kunyomi="hana-su" english="release"></card>
+		<card character="整" onyomi="sei" kunyomi="totono-eru" english="put in order"></card>
+		<card character="旅" onyomi="ryo" kunyomi="tabi" english="trip"></card>
+		<card character="族" onyomi="zoku" kunyomi="" english="tribe"></card>
+		<card character="昔" onyomi="" kunyomi="mukashi" english="long ago"></card>
+		<card character="昭" onyomi="shō" kunyomi="" english="clear"></card>
+		<card character="暑" onyomi="sho" kunyomi="atsu-i" english="hot"></card>
+		<card character="暗" onyomi="an" kunyomi="kura-i" english="dark"></card>
+		<card character="曲" onyomi="kyoku" kunyomi="ma-garu" english="sheet music, crooked"></card>
+		<card character="有" onyomi="yū" kunyomi="a-ru" english="be"></card>
+		<card character="服" onyomi="fuku" kunyomi="" english="clothes"></card>
+		<card character="期" onyomi="ki" kunyomi="" english="period of time"></card>
+		<card character="板" onyomi="han, ban" kunyomi="ita" english="board"></card>
+		<card character="柱" onyomi="chū" kunyomi="hashira" english="pillar"></card>
+		<card character="根" onyomi="kon" kunyomi="ne" english="root"></card>
+		<card character="植" onyomi="shoku" kunyomi="u-eru" english="plant"></card>
+		<card character="業" onyomi="gyō" kunyomi="" english="business"></card>
+		<card character="様" onyomi="yō" kunyomi="sama" english="appearance, Mr, Mrs, Ms"></card>
+		<card character="横" onyomi="ō" kunyomi="yoko" english="side"></card>
+		<card character="橋" onyomi="kyō" kunyomi="hashi" english="bridge"></card>
+		<card character="次" onyomi="ji" kunyomi="tsugi, tsu-gu" english="next"></card>
+		<card character="歯" onyomi="shi" kunyomi="ha" english="tooth"></card>
+		<card character="死" onyomi="shi" kunyomi="shi-nu" english="death"></card>
+		<card character="氷" onyomi="hyō" kunyomi="kōri" english="ice"></card>
+		<card character="決" onyomi="ketsu" kunyomi="ki-meru" english="decide"></card>
+		<card character="油" onyomi="yu" kunyomi="abura" english="oil"></card>
+		<card character="波" onyomi="ha" kunyomi="nami" english="wave"></card>
+		<card character="注" onyomi="chū" kunyomi="soso-gu" english="pour"></card>
+		<card character="泳" onyomi="ei" kunyomi="oyo-gu" english="swim"></card>
+		<card character="洋" onyomi="yō" kunyomi="" english="ocean, western"></card>
+		<card character="流" onyomi="ryū" kunyomi="naga-reru" english="stream"></card>
+		<card character="消" onyomi="shō" kunyomi="ki-eru, ke-su" english="extinguish"></card>
+		<card character="深" onyomi="shin" kunyomi="fuka-i" english="deep"></card>
+		<card character="温" onyomi="on" kunyomi="atata-kai" english="warm"></card>
+		<card character="港" onyomi="kō" kunyomi="minato" english="harbor"></card>
+		<card character="湖" onyomi="ko" kunyomi="mizūmi" english="lake"></card>
+		<card character="湯" onyomi="tō" kunyomi="yu" english="hot water"></card>
+		<card character="漢" onyomi="kan" kunyomi="" english="China"></card>
+		<card character="炭" onyomi="tan" kunyomi="sumi" english="charcoal"></card>
+		<card character="物" onyomi="butsu, motsu" kunyomi="mono" english="thing"></card>
+		<card character="球" onyomi="kyū" kunyomi="tama" english="ball"></card>
+		<card character="由" onyomi="yū, yu" kunyomi="" english="reason"></card>
+		<card character="申" onyomi="" kunyomi="mō-su" english="say"></card>
+		<card character="界" onyomi="kai" kunyomi="" english="world"></card>
+		<card character="畑" onyomi="hata, hatake" kunyomi="" english="agricultural field"></card>
+		<card character="病" onyomi="byō" kunyomi="yamai" english="sick"></card>
+		<card character="発" onyomi="hatsu" kunyomi="" english="departure"></card>
+		<card character="登" onyomi="tō, to" kunyomi="nobo-ru" english="climb"></card>
+		<card character="皮" onyomi="hi" kunyomi="kawa" english="skin"></card>
+		<card character="皿" onyomi="" kunyomi="sara" english="dish"></card>
+		<card character="相" onyomi="sō" kunyomi="ai" english="mutual"></card>
+		<card character="県" onyomi="ken" kunyomi="" english="prefecture"></card>
+		<card character="真" onyomi="shin" kunyomi="ma" english="true"></card>
+		<card character="着" onyomi="chaku" kunyomi="ki-ru, tsu-ku" english="wear, arrive"></card>
+		<card character="短" onyomi="tan" kunyomi="mijika-i" english="short"></card>
+		<card character="研" onyomi="ken" kunyomi="" english="sharpen"></card>
+		<card character="礼" onyomi="rei" kunyomi="" english="thanks"></card>
+		<card character="神" onyomi="shin, jin" kunyomi="kami" english="god(s)"></card>
+		<card character="祭" onyomi="sai" kunyomi="matsu-ri" english="festival"></card>
+		<card character="福" onyomi="fuku" kunyomi="" english="luck"></card>
+		<card character="秒" onyomi="byō" kunyomi="" english="second"></card>
+		<card character="究" onyomi="kyū" kunyomi="" english="research"></card>
+		<card character="章" onyomi="shō" kunyomi="" english="chapter"></card>
+		<card character="童" onyomi="dō" kunyomi="" english="juvenile"></card>
+		<card character="笛" onyomi="teki" kunyomi="fue" english="whistle"></card>
+		<card character="第" onyomi="dai" kunyomi="" english="ordinal number prefix"></card>
+		<card character="筆" onyomi="hitsu" kunyomi="fude" english="writing brush"></card>
+		<card character="等" onyomi="tō" kunyomi="hito-shii" english="class"></card>
+		<card character="箱" onyomi="" kunyomi="hako" english="box"></card>
+		<card character="級" onyomi="kyū" kunyomi="" english="rank"></card>
+		<card character="終" onyomi="shū" kunyomi="o-waru" english="end"></card>
+		<card character="緑" onyomi="ryoku" kunyomi="midori" english="green"></card>
+		<card character="練" onyomi="ren" kunyomi="ne-ru" english="practice"></card>
+		<card character="羊" onyomi="yō" kunyomi="hitsuji" english="sheep"></card>
+		<card character="美" onyomi="bi" kunyomi="utsuku-shii" english="beauty"></card>
+		<card character="習" onyomi="shū" kunyomi="nara-u" english="learn"></card>
+		<card character="者" onyomi="sha" kunyomi="mono" english="someone"></card>
+		<card character="育" onyomi="iku" kunyomi="soda-tsu" english="nurture"></card>
+		<card character="苦" onyomi="ku" kunyomi="kuru-shii, niga-i" english="suffer"></card>
+		<card character="荷" onyomi="ka" kunyomi="ni" english="luggage"></card>
+		<card character="落" onyomi="raku" kunyomi="o-chiru" english="fall"></card>
+		<card character="葉" onyomi="yō" kunyomi="ha" english="leaf"></card>
+		<card character="薬" onyomi="yaku" kunyomi="kusuri" english="medicine"></card>
+		<card character="血" onyomi="ketsu" kunyomi="chi" english="blood"></card>
+		<card character="表" onyomi="hyō" kunyomi="omote, arawa-su" english="list, surface"></card>
+		<card character="詩" onyomi="shi" kunyomi="" english="poem"></card>
+		<card character="調" onyomi="chō" kunyomi="shira-beru" english="investigate"></card>
+		<card character="談" onyomi="dan" kunyomi="" english="discuss"></card>
+		<card character="豆" onyomi="tō, zu" kunyomi="mame" english="beans"></card>
+		<card character="負" onyomi="fu" kunyomi="ma-keru, o-u" english="lose"></card>
+		<card character="起" onyomi="ki" kunyomi="o-kiru" english="wake up"></card>
+		<card character="路" onyomi="ro" kunyomi="ji" english="road"></card>
+		<card character="身" onyomi="shin" kunyomi="mi" english="body"></card>
+		<card character="転" onyomi="ten" kunyomi="koro-bu" english="revolve"></card>
+		<card character="軽" onyomi="kei" kunyomi="karu-i" english="light"></card>
+		<card character="農" onyomi="nō" kunyomi="" english="farming"></card>
+		<card character="返" onyomi="hen" kunyomi="kae-su" english="return"></card>
+		<card character="追" onyomi="tsui" kunyomi="o-u" english="follow"></card>
+		<card character="送" onyomi="sō" kunyomi="oku-ru" english="send"></card>
+		<card character="速" onyomi="soku" kunyomi="haya-i" english="fast"></card>
+		<card character="進" onyomi="shin" kunyomi="susu-mu" english="advance"></card>
+		<card character="遊" onyomi="yū" kunyomi="aso-bu" english="play"></card>
+		<card character="運" onyomi="un" kunyomi="hako-bu" english="carry"></card>
+		<card character="部" onyomi="bu" kunyomi="" english="part"></card>
+		<card character="都" onyomi="to, tsu" kunyomi="miyako" english="metropolis"></card>
+		<card character="配" onyomi="hai" kunyomi="kuba-ru" english="distribute"></card>
+		<card character="酒" onyomi="shu" kunyomi="sake, saka" english="rice wine"></card>
+		<card character="重" onyomi="jū, chō" kunyomi="omo-i, kasa-neru" english="heavy"></card>
+		<card character="鉄" onyomi="tetsu" kunyomi="" english="iron"></card>
+		<card character="銀" onyomi="gin" kunyomi="" english="silver"></card>
+		<card character="開" onyomi="kai" kunyomi="hira-ku, a-ku" english="open"></card>
+		<card character="院" onyomi="in" kunyomi="" english="institution"></card>
+		<card character="陽" onyomi="yō" kunyomi="" english="sunshine"></card>
+		<card character="階" onyomi="kai" kunyomi="" english="floor of a building"></card>
+		<card character="集" onyomi="shū" kunyomi="atsu-maru" english="collect"></card>
+		<card character="面" onyomi="men" kunyomi="" english="face"></card>
+		<card character="題" onyomi="dai" kunyomi="" english="topic"></card>
+		<card character="飲" onyomi="in" kunyomi="no-mu" english="drink"></card>
+		<card character="館" onyomi="kan" kunyomi="" english="public building"></card>
+		<card character="駅" onyomi="eki" kunyomi="" english="station"></card>
+		<card character="鼻" onyomi="" kunyomi="hana" english="nose"></card></grade>
+	<grade name="grade 4">
+		<card character="不" onyomi="fu, bu" kunyomi="" english="not"></card>
+		<card character="争" onyomi="sō" kunyomi="araso-u" english="conflict"></card>
+		<card character="付" onyomi="fu" kunyomi="tsu-ku" english="attach"></card>
+		<card character="令" onyomi="rei" kunyomi="" english="orders"></card>
+		<card character="以" onyomi="i" kunyomi="" english="since"></card>
+		<card character="仲" onyomi="" kunyomi="naka" english="go-between"></card>
+		<card character="伝" onyomi="den" kunyomi="tsuta-eru" english="transmit"></card>
+		<card character="位" onyomi="i" kunyomi="kurai" english="rank"></card>
+		<card character="低" onyomi="tei" kunyomi="hiku-i" english="low"></card>
+		<card character="例" onyomi="rei" kunyomi="tato-eru" english="example"></card>
+		<card character="便" onyomi="ben, bin" kunyomi="tayo-ri" english="convenience"></card>
+		<card character="信" onyomi="shin" kunyomi="" english="trust"></card>
+		<card character="倉" onyomi="sō" kunyomi="kura" english="storage"></card>
+		<card character="候" onyomi="kō" kunyomi="" english="climate"></card>
+		<card character="借" onyomi="shaku" kunyomi="ka-riru" english="borrow"></card>
+		<card character="停" onyomi="tei" kunyomi="" english="halt"></card>
+		<card character="健" onyomi="ken" kunyomi="" english="healthy"></card>
+		<card character="側" onyomi="soku" kunyomi="kawa" english="side"></card>
+		<card character="働" onyomi="dō" kunyomi="hatara-ku" english="work"></card>
+		<card character="億" onyomi="oku" kunyomi="" english="hundred million"></card>
+		<card character="兆" onyomi="chō" kunyomi="kiza-shi" english="portent, trillion"></card>
+		<card character="児" onyomi="ji" kunyomi="" english="child"></card>
+		<card character="共" onyomi="kyō" kunyomi="tomo" english="together"></card>
+		<card character="兵" onyomi="hei, hyō" kunyomi="tsuwamono" english="soldier"></card>
+		<card character="典" onyomi="ten" kunyomi="" english="code"></card>
+		<card character="冷" onyomi="rei" kunyomi="tsume-tai, hi-eru, sa-meru" english="cool"></card>
+		<card character="初" onyomi="sho" kunyomi="hatsu, haji-me" english="first"></card>
+		<card character="別" onyomi="betsu" kunyomi="waka-reru" english="separate"></card>
+		<card character="利" onyomi="ri" kunyomi="" english="profit"></card>
+		<card character="刷" onyomi="satsu" kunyomi="su-ru" english="printing"></card>
+		<card character="副" onyomi="fuku" kunyomi="" english="vice"></card>
+		<card character="功" onyomi="kō" kunyomi="" english="achievement"></card>
+		<card character="加" onyomi="ka" kunyomi="kuwa-eru" english="add"></card>
+		<card character="努" onyomi="do" kunyomi="tsuto-meru" english="toil"></card>
+		<card character="労" onyomi="rō" kunyomi="negira-u" english="labor"></card>
+		<card character="勇" onyomi="yū" kunyomi="isa-mu" english="courage"></card>
+		<card character="包" onyomi="hō" kunyomi="tsutsu-mu" english="wrap"></card>
+		<card character="卒" onyomi="sotsu" kunyomi="" english="graduate"></card>
+		<card character="協" onyomi="kyō" kunyomi="" english="cooperation"></card>
+		<card character="単" onyomi="tan" kunyomi="" english="simple"></card>
+		<card character="博" onyomi="haku" kunyomi="" english="Dr."></card>
+		<card character="印" onyomi="in" kunyomi="shirushi" english="mark"></card>
+		<card character="参" onyomi="san" kunyomi="mai-ru" english="participate"></card>
+		<card character="史" onyomi="shi" kunyomi="" english="history"></card>
+		<card character="司" onyomi="shi" kunyomi="" english="director"></card>
+		<card character="各" onyomi="kaku" kunyomi="" english="each"></card>
+		<card character="告" onyomi="koku" kunyomi="tsu-geru" english="tell"></card>
+		<card character="周" onyomi="shū" kunyomi="mawa-ri" english="circumference"></card>
+		<card character="唱" onyomi="shō" kunyomi="tona-eru" english="chant"></card>
+		<card character="喜" onyomi="ki" kunyomi="yoroko-bu" english="rejoice"></card>
+		<card character="器" onyomi="ki" kunyomi="utsuwa" english="container"></card>
+		<card character="囲" onyomi="i" kunyomi="kako-u" english="surround"></card>
+		<card character="固" onyomi="ko" kunyomi="kata-maru" english="harden"></card>
+		<card character="型" onyomi="kei" kunyomi="kata" english="model"></card>
+		<card character="堂" onyomi="dō" kunyomi="" english="public chamber"></card>
+		<card character="塩" onyomi="en" kunyomi="shio" english="salt"></card>
+		<card character="士" onyomi="shi" kunyomi="" english="gentleman"></card>
+		<card character="変" onyomi="hen" kunyomi="ka-waru" english="change"></card>
+		<card character="夫" onyomi="fu, fuu, bu" kunyomi="otto" english="husband"></card>
+		<card character="失" onyomi="shitsu" kunyomi="ushina-u" english="lose"></card>
+		<card character="好" onyomi="kō" kunyomi="su-ku, kono-mu" english="like"></card>
+		<card character="季" onyomi="ki" kunyomi="" english="seasons"></card>
+		<card character="孫" onyomi="son" kunyomi="mago" english="grandchild"></card>
+		<card character="完" onyomi="kan" kunyomi="" english="perfect"></card>
+		<card character="官" onyomi="kan" kunyomi="" english="government official"></card>
+		<card character="害" onyomi="gai" kunyomi="" english="harm"></card>
+		<card character="察" onyomi="satsu" kunyomi="" english="guess"></card>
+		<card character="巣" onyomi="sō" kunyomi="su" english="nest"></card>
+		<card character="差" onyomi="sa" kunyomi="" english="distinction"></card>
+		<card character="希" onyomi="ki" kunyomi="mare" english="hope"></card>
+		<card character="席" onyomi="seki" kunyomi="" english="seat"></card>
+		<card character="帯" onyomi="tai" kunyomi="obi" english="sash"></card>
+		<card character="底" onyomi="tei" kunyomi="soko" english="bottom"></card>
+		<card character="府" onyomi="fu" kunyomi="" english="urban prefecture"></card>
+		<card character="康" onyomi="kō" kunyomi="" english="ease"></card>
+		<card character="建" onyomi="ken" kunyomi="ta-teru" english="build"></card>
+		<card character="径" onyomi="kei" kunyomi="" english="diameter"></card>
+		<card character="徒" onyomi="to" kunyomi="" english="junior"></card>
+		<card character="得" onyomi="toku" kunyomi="e-ru" english="acquire"></card>
+		<card character="必" onyomi="hitsu" kunyomi="kanara-zu" english="without fail"></card>
+		<card character="念" onyomi="nen" kunyomi="" english="thought"></card>
+		<card character="愛" onyomi="ai" kunyomi="" english="love"></card>
+		<card character="成" onyomi="sei" kunyomi="na-ru" english="become"></card>
+		<card character="戦" onyomi="sen" kunyomi="ikusa, tataka-u" english="war"></card>
+		<card character="折" onyomi="setsu" kunyomi="o-ru" english="fold"></card>
+		<card character="挙" onyomi="kyo" kunyomi="a-geru" english="raise"></card>
+		<card character="改" onyomi="kai" kunyomi="arata-meru" english="reformation"></card>
+		<card character="救" onyomi="kyū" kunyomi="suku-u" english="salvation"></card>
+		<card character="敗" onyomi="hai" kunyomi="yabu-reru" english="failure"></card>
+		<card character="散" onyomi="san" kunyomi="chi-ru" english="scatter"></card>
+		<card character="料" onyomi="ryō" kunyomi="" english="fee"></card>
+		<card character="旗" onyomi="hata" kunyomi="" english="national flag"></card>
+		<card character="昨" onyomi="saku" kunyomi="" english="previous"></card>
+		<card character="景" onyomi="kei" kunyomi="" english="scenery"></card>
+		<card character="最" onyomi="sai" kunyomi="mo, motto-mo" english="most"></card>
+		<card character="望" onyomi="bō" kunyomi="nozo-mu" english="hope"></card>
+		<card character="未" onyomi="mi" kunyomi="ima-da" english="un-"></card>
+		<card character="末" onyomi="matsu" kunyomi="sue" english="end"></card>
+		<card character="札" onyomi="satsu" kunyomi="huda" english="tag"></card>
+		<card character="材" onyomi="zai" kunyomi="" english="lumber"></card>
+		<card character="束" onyomi="soku" kunyomi="taba, tsuka" english="bundle"></card>
+		<card character="松" onyomi="shō" kunyomi="matsu" english="pine"></card>
+		<card character="果" onyomi="ka" kunyomi="ha-tasu" english="fruit, accomplish"></card>
+		<card character="栄" onyomi="ei" kunyomi="saka-eru" english="prosperity"></card>
+		<card character="案" onyomi="an" kunyomi="" english="plan"></card>
+		<card character="梅" onyomi="bai" kunyomi="ume" english="apricot"></card>
+		<card character="械" onyomi="kai" kunyomi="" english="contraption"></card>
+		<card character="極" onyomi="kyoku" kunyomi="kiwa-meru" english="poles"></card>
+		<card character="標" onyomi="hyō" kunyomi="" english="signpost"></card>
+		<card character="機" onyomi="ki" kunyomi="" english="machine"></card>
+		<card character="欠" onyomi="ketsu" kunyomi="ka-keru" english="lack"></card>
+		<card character="歴" onyomi="reki" kunyomi="" english="curriculum"></card>
+		<card character="残" onyomi="zan" kunyomi="noko-ru" english="remainder"></card>
+		<card character="殺" onyomi="satsu" kunyomi="koro-su" english="kill"></card>
+		<card character="毒" onyomi="doku" kunyomi="" english="poison"></card>
+		<card character="氏" onyomi="shi" kunyomi="uji" english="family name"></card>
+		<card character="民" onyomi="min" kunyomi="tami" english="people"></card>
+		<card character="求" onyomi="kyū" kunyomi="moto-mu" english="request"></card>
+		<card character="治" onyomi="chi" kunyomi="osa-meru" english="govern"></card>
+		<card character="法" onyomi="hō" kunyomi="" english="method"></card>
+		<card character="泣" onyomi="kyū" kunyomi="na-ku" english="cry"></card>
+		<card character="浅" onyomi="sen" kunyomi="asa-i" english="shallow"></card>
+		<card character="浴" onyomi="yoku" kunyomi="abi-ru" english="bathe"></card>
+		<card character="清" onyomi="sei" kunyomi="kiyo-raka" english="pure"></card>
+		<card character="満" onyomi="man" kunyomi="mi-chiru" english="full"></card>
+		<card character="漁" onyomi="ryō" kunyomi="asa-ru" english="fishing"></card>
+		<card character="灯" onyomi="tō" kunyomi="tomo-su" english="lamp"></card>
+		<card character="無" onyomi="mu" kunyomi="na-i" english="nothing"></card>
+		<card character="然" onyomi="zen" kunyomi="shika-shi" english="so"></card>
+		<card character="焼" onyomi="shō" kunyomi="ya-ku" english="bake"></card>
+		<card character="照" onyomi="shō" kunyomi="te-rasu" english="illuminate"></card>
+		<card character="熱" onyomi="netsu" kunyomi="atsu-i" english="heat"></card>
+		<card character="牧" onyomi="boku" kunyomi="maki" english="breed"></card>
+		<card character="特" onyomi="toku" kunyomi="" english="special"></card>
+		<card character="産" onyomi="san" kunyomi="u-mu" english="give birth"></card>
+		<card character="的" onyomi="teki" kunyomi="mato" english="target"></card>
+		<card character="省" onyomi="sho, sei" kunyomi="habu-ku" english="government ministry"></card>
+		<card character="祝" onyomi="shuku" kunyomi="iwa-u" english="celebrate"></card>
+		<card character="票" onyomi="hyō" kunyomi="" english="ballot"></card>
+		<card character="種" onyomi="shu" kunyomi="tane, kusa" english="kind, seed"></card>
+		<card character="積" onyomi="seki" kunyomi="tsu-mu" english="accumulate"></card>
+		<card character="競" onyomi="kyō" kunyomi="kiso-u" english="emulate"></card>
+		<card character="笑" onyomi="shō" kunyomi="wara-u" english="laugh"></card>
+		<card character="管" onyomi="kan" kunyomi="kuda" english="pipe"></card>
+		<card character="節" onyomi="setsu" kunyomi="fushi" english="node"></card>
+		<card character="粉" onyomi="fun" kunyomi="ko, kona" english="flour"></card>
+		<card character="紀" onyomi="ki" kunyomi="" english="chronicle"></card>
+		<card character="約" onyomi="yaku" kunyomi="" english="promise"></card>
+		<card character="結" onyomi="ketsu" kunyomi="musu-bu, yu-u" english="tie"></card>
+		<card character="給" onyomi="kyū" kunyomi="tama-u" english="salary"></card>
+		<card character="続" onyomi="zoku" kunyomi="tsudu-ku" english="continue"></card>
+		<card character="置" onyomi="chi" kunyomi="o-ku" english="put"></card>
+		<card character="老" onyomi="rō" kunyomi="o-iru" english="old man"></card>
+		<card character="胃" onyomi="i" kunyomi="" english="stomach"></card>
+		<card character="脈" onyomi="myaku" kunyomi="" english="vein"></card>
+		<card character="腸" onyomi="chō" kunyomi="" english="intestines"></card>
+		<card character="臣" onyomi="shin" kunyomi="" english="retainer"></card>
+		<card character="航" onyomi="kō" kunyomi="" english="cruise"></card>
+		<card character="良" onyomi="ryō" kunyomi="yo-i" english="good"></card>
+		<card character="芸" onyomi="gei" kunyomi="" english="art"></card>
+		<card character="芽" onyomi="ga" kunyomi="me" english="bud"></card>
+		<card character="英" onyomi="ei" kunyomi="" english="England"></card>
+		<card character="菜" onyomi="sai" kunyomi="na" english="vegetable"></card>
+		<card character="街" onyomi="gai" kunyomi="machi" english="city"></card>
+		<card character="衣" onyomi="i" kunyomi="" english="clothes"></card>
+		<card character="要" onyomi="yō" kunyomi="i-ru" english="need"></card>
+		<card character="覚" onyomi="kaku" kunyomi="obo-eru, sa-meru" english="memorize"></card>
+		<card character="観" onyomi="kan" kunyomi="mi-ru" english="observe"></card>
+		<card character="訓" onyomi="kun" kunyomi="" english="instruction"></card>
+		<card character="試" onyomi="shi" kunyomi="kokoromi-ru" english="test"></card>
+		<card character="説" onyomi="setsu" kunyomi="to-ku" english="theory"></card>
+		<card character="課" onyomi="ka" kunyomi="" english="section"></card>
+		<card character="議" onyomi="gi" kunyomi="" english="deliberation"></card>
+		<card character="象" onyomi="zō, shō" kunyomi="" english="elephant"></card>
+		<card character="貨" onyomi="ka" kunyomi="" english="freight"></card>
+		<card character="貯" onyomi="cho" kunyomi="ta-meru" english="savings"></card>
+		<card character="費" onyomi="hi" kunyomi="tsui-yasu" english="expense"></card>
+		<card character="賞" onyomi="shō" kunyomi="" english="prize"></card>
+		<card character="軍" onyomi="gun" kunyomi="" english="army"></card>
+		<card character="輪" onyomi="rin" kunyomi="wa" english="wheel"></card>
+		<card character="辞" onyomi="ji" kunyomi="ya-meru" english="resign"></card>
+		<card character="辺" onyomi="hen" kunyomi="ata-ri" english="environs"></card>
+		<card character="連" onyomi="ren" kunyomi="tsu-reru, tsura-neru" english="take along"></card>
+		<card character="達" onyomi="tachi" kunyomi="" english="attain"></card>
+		<card character="選" onyomi="sen" kunyomi="era-bu" english="choose"></card>
+		<card character="郡" onyomi="gun" kunyomi="" english="county"></card>
+		<card character="量" onyomi="ryō" kunyomi="" english="quantity"></card>
+		<card character="録" onyomi="roku" kunyomi="" english="record"></card>
+		<card character="鏡" onyomi="kyō" kunyomi="kagami" english="mirror"></card>
+		<card character="関" onyomi="kan" kunyomi="" english="related"></card>
+		<card character="陸" onyomi="riku" kunyomi="" english="land"></card>
+		<card character="隊" onyomi="tai" kunyomi="" english="group"></card>
+		<card character="静" onyomi="sei" kunyomi="shizu-ka" english="quiet"></card>
+		<card character="順" onyomi="jun" kunyomi="" english="obey"></card>
+		<card character="願" onyomi="gan" kunyomi="nega-u" english="request"></card>
+		<card character="類" onyomi="rui" kunyomi="" english="sort"></card>
+		<card character="飛" onyomi="hi" kunyomi="to-bu" english="fly"></card>
+		<card character="飯" onyomi="han" kunyomi="meshi" english="meal"></card>
+		<card character="養" onyomi="yō" kunyomi="yashina-u" english="foster"></card>
+		<card character="験" onyomi="ken" kunyomi="" english="test"></card></grade>
+	<grade name="grade 5">
+		<card character="久" onyomi="kyū" kunyomi="hisa" english="long time"></card>
+		<card character="仏" onyomi="hutsu, butsu" kunyomi="hotoke" english="Buddha"></card>
+		<card character="仮" onyomi="ka, ke" kunyomi="kari" english="sham"></card>
+		<card character="件" onyomi="ken" kunyomi="" english="affair"></card>
+		<card character="任" onyomi="nin" kunyomi="maka-seru" english="responsibility"></card>
+		<card character="似" onyomi="ji" kunyomi="ni-ru" english="becoming"></card>
+		<card character="余" onyomi="yo" kunyomi="ama-ru" english="too much"></card>
+		<card character="価" onyomi="ka" kunyomi="atai" english="value"></card>
+		<card character="保" onyomi="ho" kunyomi="tamo-tsu" english="preserve"></card>
+		<card character="修" onyomi="shū" kunyomi="osa-meru" english="discipline"></card>
+		<card character="俵" onyomi="hyō" kunyomi="tawara" english="straw bag"></card>
+		<card character="個" onyomi="ko" kunyomi="" english="individual"></card>
+		<card character="備" onyomi="bi" kunyomi="sona-eru" english="provide"></card>
+		<card character="像" onyomi="zō" kunyomi="" english="statue"></card>
+		<card character="再" onyomi="sai" kunyomi="futata-bi" english="again"></card>
+		<card character="刊" onyomi="kan" kunyomi="" english="publish"></card>
+		<card character="判" onyomi="han" kunyomi="waka-ru" english="judge"></card>
+		<card character="制" onyomi="sei" kunyomi="" english="control"></card>
+		<card character="券" onyomi="ken" kunyomi="" english="ticket"></card>
+		<card character="則" onyomi="soku" kunyomi="notto-ru" english="rule"></card>
+		<card character="効" onyomi="kō" kunyomi="" english="effect"></card>
+		<card character="務" onyomi="mu" kunyomi="tsuto-meru" english="duty"></card>
+		<card character="勢" onyomi="sei" kunyomi="ikio-i" english="power"></card>
+		<card character="厚" onyomi="kō" kunyomi="atsu-i" english="thick"></card>
+		<card character="句" onyomi="ku" kunyomi="" english="phrase"></card>
+		<card character="可" onyomi="ka" kunyomi="" english="possible"></card>
+		<card character="営" onyomi="ei" kunyomi="itona-mu" english="manage"></card>
+		<card character="因" onyomi="in" kunyomi="yo-ru" english="cause"></card>
+		<card character="団" onyomi="dan" kunyomi="" english="group"></card>
+		<card character="圧" onyomi="atsu" kunyomi="" english="pressure"></card>
+		<card character="在" onyomi="zai" kunyomi="a-ru" english="exist"></card>
+		<card character="均" onyomi="kin" kunyomi="" english="level"></card>
+		<card character="基" onyomi="ki" kunyomi="moto-duku" english="foundation"></card>
+		<card character="報" onyomi="hō" kunyomi="muku-iru" english="report"></card>
+		<card character="境" onyomi="kyō" kunyomi="sakai" english="boundary"></card>
+		<card character="墓" onyomi="bo" kunyomi="haka" english="grave"></card>
+		<card character="増" onyomi="zō" kunyomi="ma-su, fu-eru" english="increase"></card>
+		<card character="夢" onyomi="mu" kunyomi="yume" english="dream"></card>
+		<card character="妻" onyomi="sai" kunyomi="tsuma" english="wife"></card>
+		<card character="婦" onyomi="fu" kunyomi="" english="lady"></card>
+		<card character="容" onyomi="yō" kunyomi="" english="contain"></card>
+		<card character="寄" onyomi="ki" kunyomi="yo-ru" english="approach"></card>
+		<card character="富" onyomi="fu" kunyomi="tomi" english="rich"></card>
+		<card character="導" onyomi="dō" kunyomi="michibi-ku" english="guide"></card>
+		<card character="居" onyomi="kyo" kunyomi="i-ru" english="reside"></card>
+		<card character="属" onyomi="zoku" kunyomi="" english="belong"></card>
+		<card character="布" onyomi="fu" kunyomi="nuno" english="linen"></card>
+		<card character="師" onyomi="shi" kunyomi="" english="expert"></card>
+		<card character="常" onyomi="jō" kunyomi="tsune" english="normal"></card>
+		<card character="幹" onyomi="kan" kunyomi="miki" english="tree-trunk"></card>
+		<card character="序" onyomi="jo" kunyomi="" english="preface"></card>
+		<card character="弁" onyomi="ben" kunyomi="" english="valve"></card>
+		<card character="張" onyomi="chō" kunyomi="ha-ru" english="stretch"></card>
+		<card character="往" onyomi="ō" kunyomi="" english="journey"></card>
+		<card character="復" onyomi="fuku" kunyomi="" english="repeating"></card>
+		<card character="徳" onyomi="toku" kunyomi="" english="virtue"></card>
+		<card character="志" onyomi="shi" kunyomi="kokorozashi" english="intention"></card>
+		<card character="応" onyomi="ō" kunyomi="" english="respond"></card>
+		<card character="快" onyomi="kai" kunyomi="kokoroyo-i" english="cheerful"></card>
+		<card character="性" onyomi="sei, shō" kunyomi="saga" english="gender"></card>
+		<card character="恩" onyomi="on" kunyomi="" english="grace"></card>
+		<card character="情" onyomi="jō" kunyomi="nasa-ke" english="feelings"></card>
+		<card character="態" onyomi="tai" kunyomi="" english="condition"></card>
+		<card character="慣" onyomi="kan" kunyomi="na-reru" english="accustomed"></card>
+		<card character="承" onyomi="shō" kunyomi="uketamawa-ru" english="acquiesce"></card>
+		<card character="技" onyomi="gi" kunyomi="waza" english="skill"></card>
+		<card character="招" onyomi="shō" kunyomi="mane-ku" english="beckon"></card>
+		<card character="授" onyomi="ju" kunyomi="sazu-keru" english="instruct"></card>
+		<card character="採" onyomi="sai" kunyomi="to-ru" english="pick"></card>
+		<card character="接" onyomi="setsu" kunyomi="" english="contact"></card>
+		<card character="提" onyomi="tei" kunyomi="sa-geru" english="present"></card>
+		<card character="損" onyomi="son" kunyomi="soko-neru" english="loss"></card>
+		<card character="支" onyomi="shi" kunyomi="sasa-eru" english="branch"></card>
+		<card character="政" onyomi="sei" kunyomi="matsurigoto" english="politics"></card>
+		<card character="故" onyomi="ko" kunyomi="yue" english="circumstances"></card>
+		<card character="敵" onyomi="teki" kunyomi="kataki" english="enemy"></card>
+		<card character="断" onyomi="dan" kunyomi="ta-tsu" english="cut off"></card>
+		<card character="旧" onyomi="kyū" kunyomi="" english="old times"></card>
+		<card character="易" onyomi="eki" kunyomi="yasa-shii" english="easy"></card>
+		<card character="暴" onyomi="bō" kunyomi="aba-ku" english="outburst"></card>
+		<card character="条" onyomi="jō" kunyomi="" english="clause"></card>
+		<card character="枝" onyomi="shi" kunyomi="eda" english="branch"></card>
+		<card character="査" onyomi="sa" kunyomi="" english="investigate"></card>
+		<card character="格" onyomi="kaku" kunyomi="" english="status"></card>
+		<card character="桜" onyomi="ō" kunyomi="sakura" english="cherry"></card>
+		<card character="検" onyomi="ken" kunyomi="" english="examine"></card>
+		<card character="構" onyomi="kō" kunyomi="kama-eru" english="construct"></card>
+		<card character="武" onyomi="bu" kunyomi="" english="military"></card>
+		<card character="比" onyomi="hi" kunyomi="kura-beru" english="compare"></card>
+		<card character="永" onyomi="ei" kunyomi="naga-i" english="eternity"></card>
+		<card character="河" onyomi="ga" kunyomi="kawa" english="river"></card>
+		<card character="液" onyomi="eki" kunyomi="" english="fluid"></card>
+		<card character="混" onyomi="kon" kunyomi="maza-ru" english="mix"></card>
+		<card character="減" onyomi="gen" kunyomi="he-ru" english="decrease"></card>
+		<card character="測" onyomi="soku" kunyomi="haka-ru" english="fathom"></card>
+		<card character="準" onyomi="jun" kunyomi="" english="standard"></card>
+		<card character="演" onyomi="en" kunyomi="" english="perform"></card>
+		<card character="潔" onyomi="ketsu" kunyomi="isagiyo-i" english="undefiled"></card>
+		<card character="災" onyomi="sai" kunyomi="wazawa-i" english="disaster"></card>
+		<card character="燃" onyomi="nen" kunyomi="mo-eru" english="burn"></card>
+		<card character="版" onyomi="han" kunyomi="" english="printing block"></card>
+		<card character="犯" onyomi="han" kunyomi="oka-su" english="crime"></card>
+		<card character="状" onyomi="jō" kunyomi="" english="form"></card>
+		<card character="独" onyomi="doku" kunyomi="hito-ri" english="alone"></card>
+		<card character="率" onyomi="ritsu" kunyomi="hikii-ru" english="rate"></card>
+		<card character="現" onyomi="gen" kunyomi="arawa-reru" english="appear"></card>
+		<card character="留" onyomi="ryū, ru" kunyomi="todo-maru" english="detain"></card>
+		<card character="略" onyomi="ryaku" kunyomi="" english="abbreviation"></card>
+		<card character="益" onyomi="eki" kunyomi="" english="benefit"></card>
+		<card character="眼" onyomi="gan" kunyomi="me" english="eyeball"></card>
+		<card character="破" onyomi="ha" kunyomi="yabu-ru" english="rend"></card>
+		<card character="確" onyomi="kaku" kunyomi="tashi-ka" english="certain"></card>
+		<card character="示" onyomi="shi" kunyomi="shime-su" english="indicate"></card>
+		<card character="祖" onyomi="so" kunyomi="" english="ancestor"></card>
+		<card character="禁" onyomi="kin" kunyomi="" english="prohibition"></card>
+		<card character="移" onyomi="i" kunyomi="utsu-ru" english="shift"></card>
+		<card character="程" onyomi="tei" kunyomi="hodo" english="extent"></card>
+		<card character="税" onyomi="zei" kunyomi="" english="tax"></card>
+		<card character="築" onyomi="chiku" kunyomi="kizu-ku" english="fabricate"></card>
+		<card character="精" onyomi="sei" kunyomi="" english="refined"></card>
+		<card character="素" onyomi="su" kunyomi="moto" english="elementary"></card>
+		<card character="経" onyomi="kei" kunyomi="he-ru" english="manage"></card>
+		<card character="統" onyomi="tō" kunyomi="su-beru" english="unite"></card>
+		<card character="絶" onyomi="zetsu" kunyomi="ta-tsu" english="discontinue"></card>
+		<card character="綿" onyomi="men" kunyomi="wata" english="cotton"></card>
+		<card character="総" onyomi="sō" kunyomi="" english="whole"></card>
+		<card character="編" onyomi="hen" kunyomi="a-mu" english="compile"></card>
+		<card character="績" onyomi="seki" kunyomi="" english="exploits"></card>
+		<card character="織" onyomi="shiki" kunyomi="o-ru" english="weave"></card>
+		<card character="罪" onyomi="zai" kunyomi="tsumi" english="guilt"></card>
+		<card character="群" onyomi="gun" kunyomi="mu-reru" english="flock"></card>
+		<card character="義" onyomi="gi" kunyomi="" english="righteousness"></card>
+		<card character="耕" onyomi="kō" kunyomi="tagaya-su" english="till"></card>
+		<card character="職" onyomi="shoku" kunyomi="" english="employment"></card>
+		<card character="肥" onyomi="hi" kunyomi="ko-yasu" english="fertilizer"></card>
+		<card character="能" onyomi="nō" kunyomi="" english="ability"></card>
+		<card character="興" onyomi="kyō" kunyomi="oko-su" english="entertain"></card>
+		<card character="舌" onyomi="zetsu" kunyomi="shita" english="tongue"></card>
+		<card character="舎" onyomi="sha" kunyomi="" english="cottage"></card>
+		<card character="術" onyomi="jutsu" kunyomi="sube" english="art"></card>
+		<card character="衛" onyomi="ei" kunyomi="" english="defense"></card>
+		<card character="製" onyomi="sei" kunyomi="" english="manufacture"></card>
+		<card character="複" onyomi="fuku" kunyomi="" english="duplicate"></card>
+		<card character="規" onyomi="ki" kunyomi="" english="rule"></card>
+		<card character="解" onyomi="ge, kai" kunyomi="to-ku" english="untie"></card>
+		<card character="設" onyomi="setsu" kunyomi="mouke-ru" english="establish"></card>
+		<card character="許" onyomi="kyo" kunyomi="yuru-su" english="permit"></card>
+		<card character="証" onyomi="shō" kunyomi="" english="evidence"></card>
+		<card character="評" onyomi="hyō" kunyomi="" english="evaluate"></card>
+		<card character="講" onyomi="kō" kunyomi="" english="lecture"></card>
+		<card character="謝" onyomi="sha" kunyomi="ayama-ru" english="apologize"></card>
+		<card character="識" onyomi="shiki" kunyomi="" english="discriminating"></card>
+		<card character="護" onyomi="go" kunyomi="mamo-ru" english="safeguard"></card>
+		<card character="豊" onyomi="hō" kunyomi="yuta-ka" english="bountiful"></card>
+		<card character="財" onyomi="zai" kunyomi="" english="wealth"></card>
+		<card character="貧" onyomi="hin" kunyomi="mazushi-i" english="poor"></card>
+		<card character="責" onyomi="seki" kunyomi="se-meru" english="blame"></card>
+		<card character="貸" onyomi="tai" kunyomi="ka-su" english="lend"></card>
+		<card character="貿" onyomi="bō" kunyomi="" english="trade"></card>
+		<card character="賀" onyomi="ga" kunyomi="" english="congratulations"></card>
+		<card character="資" onyomi="shi" kunyomi="" english="resources"></card>
+		<card character="賛" onyomi="san" kunyomi="" english="approve"></card>
+		<card character="質" onyomi="shitsu" kunyomi="" english="quality"></card>
+		<card character="輸" onyomi="yu" kunyomi="" english="transport"></card>
+		<card character="述" onyomi="jutsu" kunyomi="no-beru" english="mention"></card>
+		<card character="迷" onyomi="mei" kunyomi="mayo-u" english="astray"></card>
+		<card character="退" onyomi="tai" kunyomi="shirizo-ku" english="retreat"></card>
+		<card character="逆" onyomi="gyaku" kunyomi="sakara-u" english="inverted"></card>
+		<card character="造" onyomi="zō" kunyomi="tsuku-ru" english="create"></card>
+		<card character="過" onyomi="ka" kunyomi="ayama-chi" english="go beyond"></card>
+		<card character="適" onyomi="teki" kunyomi="" english="suitable"></card>
+		<card character="酸" onyomi="san" kunyomi="" english="acid"></card>
+		<card character="鉱" onyomi="kō" kunyomi="" english="mineral"></card>
+		<card character="銅" onyomi="dō" kunyomi="" english="copper"></card>
+		<card character="銭" onyomi="sen" kunyomi="zeni" english="coin"></card>
+		<card character="防" onyomi="bō" kunyomi="fuse-gu" english="prevent"></card>
+		<card character="限" onyomi="gen" kunyomi="kagi-ru" english="limit"></card>
+		<card character="険" onyomi="ken" kunyomi="" english="precipitous"></card>
+		<card character="際" onyomi="sai" kunyomi="kiwa" english="occasion"></card>
+		<card character="雑" onyomi="zatsu" kunyomi="" english="miscellaneous"></card>
+		<card character="非" onyomi="hi" kunyomi="ara-zu" english="negative"></card>
+		<card character="預" onyomi="yo" kunyomi="azu-keru" english="deposit"></card>
+		<card character="領" onyomi="ryō" kunyomi="" english="territory"></card>
+		<card character="額" onyomi="gaku" kunyomi="hitai" english="amount"></card>
+		<card character="飼" onyomi="shi" kunyomi="ka-u" english="domesticate"></card></grade>
+	<grade name="grade 6">
+		<card character="並" onyomi="hei" kunyomi="nami, nara-bu" english="row"></card>
+		<card character="乱" onyomi="ran" kunyomi="mida-reru" english="riot"></card>
+		<card character="乳" onyomi="nyū" kunyomi="chichi" english="milk"></card>
+		<card character="亡" onyomi="bō" kunyomi="na-kunaru" english="deceased"></card>
+		<card character="仁" onyomi="jin" kunyomi="" english="kindness"></card>
+		<card character="供" onyomi="kyō, ku" kunyomi="tomo" english="offer"></card>
+		<card character="俳" onyomi="hai" kunyomi="" english="actor"></card>
+		<card character="値" onyomi="chi" kunyomi="atai" english="value"></card>
+		<card character="傷" onyomi="shō" kunyomi="kizu" english="wound"></card>
+		<card character="優" onyomi="yū" kunyomi="yasa-shii" english="superior"></card>
+		<card character="党" onyomi="tō" kunyomi="" english="political party"></card>
+		<card character="冊" onyomi="satsu" kunyomi="" english="counter for books"></card>
+		<card character="処" onyomi="sho" kunyomi="" english="dispose"></card>
+		<card character="刻" onyomi="koku" kunyomi="kiza-mu" english="engrave"></card>
+		<card character="割" onyomi="katsu" kunyomi="wa-ru" english="divide"></card>
+		<card character="創" onyomi="sō" kunyomi="tsuku-ru" english="create"></card>
+		<card character="劇" onyomi="geki" kunyomi="" english="drama"></card>
+		<card character="勤" onyomi="kin" kunyomi="tsuto-meru" english="diligence"></card>
+		<card character="危" onyomi="ki" kunyomi="aya-ui" english="dangerous"></card>
+		<card character="卵" onyomi="ran" kunyomi="tamago" english="egg"></card>
+		<card character="厳" onyomi="gen" kunyomi="kibi-shii" english="strict"></card>
+		<card character="収" onyomi="shū" kunyomi="osa-meru" english="take in"></card>
+		<card character="后" onyomi="gō" kunyomi="kisaki" english="queen"></card>
+		<card character="否" onyomi="hi" kunyomi="ina, iya" english="negate"></card>
+		<card character="吸" onyomi="kyū" kunyomi="su-u" english="suck"></card>
+		<card character="呼" onyomi="ko" kunyomi="yo-bu" english="call"></card>
+		<card character="善" onyomi="zen" kunyomi="yo-i" english="good"></card>
+		<card character="困" onyomi="kon" kunyomi="koma-ru" english="become distressed"></card>
+		<card character="垂" onyomi="choku" kunyomi="ta-reru" english="droop"></card>
+		<card character="城" onyomi="jō" kunyomi="shiro" english="castle"></card>
+		<card character="域" onyomi="iki" kunyomi="" english="range"></card>
+		<card character="奏" onyomi="sō" kunyomi="kana-deru" english="play music"></card>
+		<card character="奮" onyomi="hun" kunyomi="huru-u" english="stirred up"></card>
+		<card character="姿" onyomi="shi" kunyomi="sugata" english="shape"></card>
+		<card character="存" onyomi="son" kunyomi="" english="suppose"></card>
+		<card character="孝" onyomi="kō" kunyomi="" english="filial piety"></card>
+		<card character="宅" onyomi="taku" kunyomi="ie" english="home"></card>
+		<card character="宇" onyomi="u" kunyomi="" english="eaves"></card>
+		<card character="宗" onyomi="shū" kunyomi="sō" english="religion"></card>
+		<card character="宙" onyomi="chū" kunyomi="" english="mid-air"></card>
+		<card character="宝" onyomi="hō" kunyomi="takara" english="treasure"></card>
+		<card character="宣" onyomi="sen" kunyomi="notama-u" english="proclaim"></card>
+		<card character="密" onyomi="mitsu" kunyomi="" english="secrecy"></card>
+		<card character="寸" onyomi="sun" kunyomi="" english="measurement"></card>
+		<card character="専" onyomi="sen" kunyomi="moppa-ra" english="specialty"></card>
+		<card character="射" onyomi="sha" kunyomi="i-ru" english="shoot"></card>
+		<card character="将" onyomi="shō" kunyomi="" english="leader"></card>
+		<card character="尊" onyomi="son" kunyomi="" english="revered"></card>
+		<card character="就" onyomi="shū" kunyomi="tsu-ku" english="concerning"></card>
+		<card character="尺" onyomi="shaku" kunyomi="" english="measure of length"></card>
+		<card character="届" onyomi="todo-ku" kunyomi="" english="deliver"></card>
+		<card character="展" onyomi="ten" kunyomi="" english="expand"></card>
+		<card character="層" onyomi="sō" kunyomi="" english="stratum"></card>
+		<card character="己" onyomi="ko" kunyomi="onore" english="self"></card>
+		<card character="巻" onyomi="kan" kunyomi="ma-ku" english="scroll"></card>
+		<card character="幕" onyomi="baku" kunyomi="maku" english="curtain"></card>
+		<card character="干" onyomi="kan" kunyomi="ho-su" english="dry"></card>
+		<card character="幼" onyomi="yō" kunyomi="osana-i" english="infancy"></card>
+		<card character="庁" onyomi="chō" kunyomi="" english="government office"></card>
+		<card character="座" onyomi="za" kunyomi="suwa-ru" english="sit"></card>
+		<card character="延" onyomi="en" kunyomi="no-basu" english="prolong"></card>
+		<card character="律" onyomi="ritsu" kunyomi="" english="rhythm"></card>
+		<card character="従" onyomi="jū" kunyomi="shitaga-u" english="obey"></card>
+		<card character="忘" onyomi="bō" kunyomi="wasu-reru" english="forget"></card>
+		<card character="忠" onyomi="chū" kunyomi="" english="loyalty"></card>
+		<card character="憲" onyomi="ken" kunyomi="" english="constitution"></card>
+		<card character="我" onyomi="ga" kunyomi="ware" english="ego"></card>
+		<card character="批" onyomi="hi" kunyomi="" english="criticism"></card>
+		<card character="担" onyomi="tan" kunyomi="nina-u" english="shouldering"></card>
+		<card character="拝" onyomi="hai" kunyomi="oga-mu" english="worship"></card>
+		<card character="拡" onyomi="kaku" kunyomi="hiro-geru" english="broaden"></card>
+		<card character="捨" onyomi="sha" kunyomi="su-teru" english="throw away"></card>
+		<card character="探" onyomi="tan" kunyomi="saga-su" english="grope"></card>
+		<card character="推" onyomi="sui" kunyomi="" english="infer"></card>
+		<card character="揮" onyomi="ki" kunyomi="" english="command"></card>
+		<card character="操" onyomi="sō" kunyomi="ayatsu-ru" english="maneuver"></card>
+		<card character="敬" onyomi="kei" kunyomi="uyama-u" english="respect"></card>
+		<card character="映" onyomi="ei" kunyomi="utsu-ru" english="reflect"></card>
+		<card character="晩" onyomi="ban" kunyomi="" english="nightfall"></card>
+		<card character="暖" onyomi="dan" kunyomi="atata-kai" english="warmth"></card>
+		<card character="暮" onyomi="bo" kunyomi="ku-rasu" english="livelihood"></card>
+		<card character="朗" onyomi="rō" kunyomi="hoga-raka" english="melodious"></card>
+		<card character="机" onyomi="ki" kunyomi="tsukue" english="desk"></card>
+		<card character="枚" onyomi="mai" kunyomi="" english="sheet of..."></card>
+		<card character="染" onyomi="sen" kunyomi="so-meru" english="dye"></card>
+		<card character="株" onyomi="kabu" kunyomi="" english="stocks"></card>
+		<card character="棒" onyomi="bō" kunyomi="" english="rod"></card>
+		<card character="模" onyomi="mo" kunyomi="" english="imitation"></card>
+		<card character="権" onyomi="ken" kunyomi="" english="rights"></card>
+		<card character="樹" onyomi="ju" kunyomi="ki" english="trees"></card>
+		<card character="欲" onyomi="yoku" kunyomi="ho-shii" english="longing"></card>
+		<card character="段" onyomi="dan" kunyomi="" english="steps"></card>
+		<card character="沿" onyomi="en" kunyomi="so-u" english="run alongside"></card>
+		<card character="泉" onyomi="sen" kunyomi="izumi" english="fountain"></card>
+		<card character="洗" onyomi="sen" kunyomi="ara-u" english="wash"></card>
+		<card character="派" onyomi="ha" kunyomi="" english="sect"></card>
+		<card character="済" onyomi="sai" kunyomi="su-mu" english="settle"></card>
+		<card character="源" onyomi="gen" kunyomi="minamoto" english="origin"></card>
+		<card character="潮" onyomi="cho" kunyomi="shio" english="tide"></card>
+		<card character="激" onyomi="geki" kunyomi="hage-shii" english="violent"></card>
+		<card character="灰" onyomi="hai" kunyomi="" english="ashes"></card>
+		<card character="熟" onyomi="juku" kunyomi="u-reru" english="ripen"></card>
+		<card character="片" onyomi="hen" kunyomi="kata" english="one-sided"></card>
+		<card character="班" onyomi="han" kunyomi="" english="group"></card>
+		<card character="異" onyomi="i" kunyomi="koto-naru" english="uncommon"></card>
+		<card character="疑" onyomi="gi" kunyomi="utaga-u" english="doubt"></card>
+		<card character="痛" onyomi="tsū" kunyomi="ita-i" english="pain"></card>
+		<card character="皇" onyomi="kō" kunyomi="ō" english="emperor"></card>
+		<card character="盛" onyomi="sei" kunyomi="mo-ru" english="prosper"></card>
+		<card character="盟" onyomi="mei" kunyomi="" english="alliance"></card>
+		<card character="看" onyomi="kan" kunyomi="" english="watch over"></card>
+		<card character="砂" onyomi="sa, sha" kunyomi="suna" english="sand"></card>
+		<card character="磁" onyomi="ji" kunyomi="" english="magnet"></card>
+		<card character="私" onyomi="shi" kunyomi="watakushi, watashi" english="me"></card>
+		<card character="秘" onyomi="hi" kunyomi="" english="secret"></card>
+		<card character="穀" onyomi="koku" kunyomi="" english="cereal"></card>
+		<card character="穴" onyomi="ketsu" kunyomi="ana" english="hole"></card>
+		<card character="窓" onyomi="sō" kunyomi="mado" english="window"></card>
+		<card character="筋" onyomi="kin" kunyomi="suji" english="muscle"></card>
+		<card character="策" onyomi="saku" kunyomi="" english="scheme"></card>
+		<card character="簡" onyomi="kan" kunyomi="" english="simplicity"></card>
+		<card character="糖" onyomi="tō" kunyomi="" english="sugar"></card>
+		<card character="系" onyomi="kei" kunyomi="" english="lineage"></card>
+		<card character="紅" onyomi="kō" kunyomi="beni, kurenai" english="deep red"></card>
+		<card character="納" onyomi="nō" kunyomi="osa-meru" english="settlement"></card>
+		<card character="純" onyomi="jun" kunyomi="" english="genuine"></card>
+		<card character="絹" onyomi="ken" kunyomi="kinu" english="silk"></card>
+		<card character="縦" onyomi="ju" kunyomi="tate" english="vertical"></card>
+		<card character="縮" onyomi="shuku" kunyomi="chidi-mu" english="shrink"></card>
+		<card character="署" onyomi="sho" kunyomi="" english="government office"></card>
+		<card character="翌" onyomi="yoku" kunyomi="" english="the following"></card>
+		<card character="聖" onyomi="sei" kunyomi="" english="holy"></card>
+		<card character="肺" onyomi="hai" kunyomi="" english="lung"></card>
+		<card character="背" onyomi="hai" kunyomi="se" english="back"></card>
+		<card character="胸" onyomi="kyō" kunyomi="mune" english="bosom"></card>
+		<card character="脳" onyomi="nō" kunyomi="" english="brain"></card>
+		<card character="腹" onyomi="fuku" kunyomi="hara" english="abdomen"></card>
+		<card character="臓" onyomi="zō" kunyomi="" english="entrails"></card>
+		<card character="臨" onyomi="rin" kunyomi="nozo-mu" english="lookover"></card>
+		<card character="至" onyomi="shi" kunyomi="ita-ru" english="climax"></card>
+		<card character="若" onyomi="jaku" kunyomi="waka-i" english="young"></card>
+		<card character="著" onyomi="cho" kunyomi="" english="renowned"></card>
+		<card character="蒸" onyomi="jō" kunyomi="mu-su" english="steam"></card>
+		<card character="蔵" onyomi="zō" kunyomi="kura" english="warehouse"></card>
+		<card character="蚕" onyomi="kaiko" kunyomi="" english="silkworm"></card>
+		<card character="衆" onyomi="shū" kunyomi="" english="masses"></card>
+		<card character="裁" onyomi="sai" kunyomi="saba-ku" english="judge"></card>
+		<card character="装" onyomi="sō, shō" kunyomi="yosoo-u" english="attire"></card>
+		<card character="裏" onyomi="ri" kunyomi="ura" english="back"></card>
+		<card character="補" onyomi="ho" kunyomi="ogina-u" english="supplement"></card>
+		<card character="視" onyomi="shi" kunyomi="mi-ru" english="look at"></card>
+		<card character="覧" onyomi="ran" kunyomi="" english="perusal"></card>
+		<card character="討" onyomi="tō" kunyomi="u-tsu" english="chastise"></card>
+		<card character="訪" onyomi="hō" kunyomi="otozu-reru" english="visit"></card>
+		<card character="訳" onyomi="yaku" kunyomi="wake" english="translate"></card>
+		<card character="詞" onyomi="shi" kunyomi="kotoba" english="poetry"></card>
+		<card character="誌" onyomi="shi" kunyomi="" english="document"></card>
+		<card character="認" onyomi="nin" kunyomi="mito-meru" english="recognize"></card>
+		<card character="誕" onyomi="tan" kunyomi="" english="born"></card>
+		<card character="誠" onyomi="sei" kunyomi="makoto" english="sincerity"></card>
+		<card character="誤" onyomi="go" kunyomi="ayama-ru" english="mistake"></card>
+		<card character="論" onyomi="ron" kunyomi="" english="theory"></card>
+		<card character="諸" onyomi="sho" kunyomi="moro" english="everything"></card>
+		<card character="警" onyomi="kei" kunyomi="" english="guard against"></card>
+		<card character="貴" onyomi="ki" kunyomi="" english="precious"></card>
+		<card character="賃" onyomi="chin" kunyomi="" english="fare"></card>
+		<card character="遺" onyomi="i" kunyomi="" english="bequeath"></card>
+		<card character="郵" onyomi="yū" kunyomi="" english="mail"></card>
+		<card character="郷" onyomi="kyō" kunyomi="gō" english="home town"></card>
+		<card character="針" onyomi="shin" kunyomi="hari" english="needle"></card>
+		<card character="鋼" onyomi="kō" kunyomi="hagane" english="steel"></card>
+		<card character="閉" onyomi="hei" kunyomi="shi-meru" english="closed"></card>
+		<card character="閣" onyomi="kaku" kunyomi="" english="tall"></card>
+		<card character="降" onyomi="kō" kunyomi="o-riru" english="descend"></card>
+		<card character="陛" onyomi="hei" kunyomi="" english="majesty"></card>
+		<card character="除" onyomi="jo" kunyomi="nozo-ku" english="exclude"></card>
+		<card character="障" onyomi="shō" kunyomi="sawa-ru" english="hurt"></card>
+		<card character="難" onyomi="nan" kunyomi="muzuka-shii" english="difficult"></card>
+		<card character="革" onyomi="kaku" kunyomi="kawa" english="leather"></card>
+		<card character="頂" onyomi="chō" kunyomi="itada-ku" english="place on the head"></card>
+		<card character="骨" onyomi="kotsu" kunyomi="hone" english="bone"></card></grade>
+	<grade name="katakana">
+        <card character="ア" onyomi="" kunyomi="a" english=""></card>
+        <card character="イ" onyomi="" kunyomi="i" english=""></card>
+        <card character="ウ" onyomi="" kunyomi="u" english=""></card>
+        <card character="エ" onyomi="" kunyomi="e" english=""></card>
+        <card character="オ" onyomi="" kunyomi="o" english=""></card>
+        <card character="カ" onyomi="" kunyomi="ka" english=""></card>
+        <card character="キ" onyomi="" kunyomi="ki" english=""></card>
+        <card character="ク" onyomi="" kunyomi="ku" english=""></card>
+        <card character="ケ" onyomi="" kunyomi="ke" english=""></card>
+        <card character="コ" onyomi="" kunyomi="ko" english=""></card>
+        <card character="キャ" onyomi="" kunyomi="kya" english=""></card>
+        <card character="キュ" onyomi="" kunyomi="kyu" english=""></card>
+        <card character="キョ" onyomi="" kunyomi="kyo" english=""></card>
+        <card character="サ" onyomi="" kunyomi="sa" english=""></card>
+        <card character="シ" onyomi="" kunyomi="shi" english=""></card>
+        <card character="ス" onyomi="" kunyomi="su" english=""></card>
+        <card character="セ" onyomi="" kunyomi="se" english=""></card>
+        <card character="ソ" onyomi="" kunyomi="so" english=""></card>
+        <card character="シャ" onyomi="" kunyomi="sha" english=""></card>
+        <card character="シュ" onyomi="" kunyomi="shu" english=""></card>
+        <card character="ショ" onyomi="" kunyomi="sho" english=""></card>
+        <card character="タ" onyomi="" kunyomi="ta" english=""></card>
+        <card character="チ" onyomi="" kunyomi="chi" english=""></card>
+        <card character="ツ" onyomi="" kunyomi="tsu" english=""></card>
+        <card character="テ" onyomi="" kunyomi="te" english=""></card>
+        <card character="ト" onyomi="" kunyomi="to" english=""></card>
+        <card character="チャ" onyomi="" kunyomi="cha" english=""></card>
+        <card character="チュ" onyomi="" kunyomi="chu" english=""></card>
+        <card character="チョ" onyomi="" kunyomi="cho" english=""></card>
+        <card character="ナ" onyomi="" kunyomi="na" english=""></card>
+        <card character="ニ" onyomi="" kunyomi="ni" english=""></card>
+        <card character="ヌ" onyomi="" kunyomi="nu" english=""></card>
+        <card character="ネ" onyomi="" kunyomi="ne" english=""></card>
+        <card character="ノ" onyomi="" kunyomi="no" english=""></card>
+        <card character="ニャ" onyomi="" kunyomi="nya" english=""></card>
+        <card character="ニュ" onyomi="" kunyomi="nyu" english=""></card>
+        <card character="ニョ" onyomi="" kunyomi="nyo" english=""></card>
+        <card character="ハ" onyomi="" kunyomi="ha" english=""></card>
+        <card character="ヒ" onyomi="" kunyomi="hi" english=""></card>
+        <card character="フ" onyomi="" kunyomi="fu" english=""></card>
+        <card character="ヘ" onyomi="" kunyomi="he" english=""></card>
+        <card character="ホ" onyomi="" kunyomi="ho" english=""></card>
+        <card character="ヒャ" onyomi="" kunyomi="hya" english=""></card>
+        <card character="ヒュ" onyomi="" kunyomi="hyu" english=""></card>
+        <card character="ヒョ" onyomi="" kunyomi="hyo" english=""></card>
+        <card character="マ" onyomi="" kunyomi="ma" english=""></card>
+        <card character="ミ" onyomi="" kunyomi="mi" english=""></card>
+        <card character="ム" onyomi="" kunyomi="mu" english=""></card>
+        <card character="メ" onyomi="" kunyomi="me" english=""></card>
+        <card character="モ" onyomi="" kunyomi="mo" english=""></card>
+        <card character="ミャ" onyomi="" kunyomi="mya" english=""></card>
+        <card character="ミュ" onyomi="" kunyomi="myu" english=""></card>
+        <card character="ミョ" onyomi="" kunyomi="myo" english=""></card>
+        <card character="ヤ" onyomi="" kunyomi="ya" english=""></card>
+        <card character="ユ" onyomi="" kunyomi="yu" english=""></card>
+        <card character="ヨ" onyomi="" kunyomi="yo" english=""></card>
+        <card character="ラ" onyomi="" kunyomi="ra" english=""></card>
+        <card character="リ" onyomi="" kunyomi="ri" english=""></card>
+        <card character="ル" onyomi="" kunyomi="ru" english=""></card>
+        <card character="レ" onyomi="" kunyomi="re" english=""></card>
+        <card character="ロ" onyomi="" kunyomi="ro" english=""></card>
+        <card character="リャ" onyomi="" kunyomi="rya" english=""></card>
+        <card character="リュ" onyomi="" kunyomi="ryu" english=""></card>
+        <card character="リョ" onyomi="" kunyomi="ryo" english=""></card>
+        <card character="ワ" onyomi="" kunyomi="wa" english=""></card>
+        <card character="ヰ" onyomi="" kunyomi="wi" english=""></card>
+        <card character="ヱ" onyomi="" kunyomi="we" english=""></card>
+        <card character="ヲ" onyomi="" kunyomi="wo" english=""></card>
+        <card character="ヰャ" onyomi="" kunyomi="wya" english=""></card>
+        <card character="ヰュ" onyomi="" kunyomi="wyu" english=""></card>
+        <card character="ヰョ" onyomi="" kunyomi="wyo" english=""></card>
+        <card character="ン" onyomi="" kunyomi="n" english=""></card>
+        <card character="ガ" onyomi="" kunyomi="ga" english=""></card>
+        <card character="ギ" onyomi="" kunyomi="gi" english=""></card>
+        <card character="グ" onyomi="" kunyomi="gu" english=""></card>
+        <card character="ゲ" onyomi="" kunyomi="ge" english=""></card>
+        <card character="ゴ" onyomi="" kunyomi="go" english=""></card>
+        <card character="ギャ" onyomi="" kunyomi="gya" english=""></card>
+        <card character="ギュ" onyomi="" kunyomi="gyu" english=""></card>
+        <card character="ギョ" onyomi="" kunyomi="gyo" english=""></card>
+        <card character="ザ" onyomi="" kunyomi="za" english=""></card>
+        <card character="ジ" onyomi="" kunyomi="ji" english=""></card>
+        <card character="ズ" onyomi="" kunyomi="zu" english=""></card>
+        <card character="ゼ" onyomi="" kunyomi="ze" english=""></card>
+        <card character="ゾ" onyomi="" kunyomi="zo" english=""></card>
+        <card character="ジャ" onyomi="" kunyomi="ja" english=""></card>
+        <card character="ジュ" onyomi="" kunyomi="ju" english=""></card>
+        <card character="ジョ" onyomi="" kunyomi="jo" english=""></card>
+        <card character="ダ" onyomi="" kunyomi="da" english=""></card>
+        <card character="ヂ" onyomi="" kunyomi="(ji)" english=""></card>
+        <card character="ヅ" onyomi="" kunyomi="(dzu)" english=""></card>
+        <card character="デ" onyomi="" kunyomi="de" english=""></card>
+        <card character="ド" onyomi="" kunyomi="do" english=""></card>
+        <card character="ヂャ" onyomi="" kunyomi="(ja)" english=""></card>
+        <card character="ヂュ" onyomi="" kunyomi="(ju)" english=""></card>
+        <card character="ヂョ" onyomi="" kunyomi="(jo)" english=""></card>
+        <card character="バ" onyomi="" kunyomi="ba" english=""></card>
+        <card character="ビ" onyomi="" kunyomi="bi" english=""></card>
+        <card character="ブ" onyomi="" kunyomi="bu" english=""></card>
+        <card character="ベ" onyomi="" kunyomi="be" english=""></card>
+        <card character="ボ" onyomi="" kunyomi="bo" english=""></card>
+        <card character="ビャ" onyomi="" kunyomi="bya" english=""></card>
+        <card character="ビュ" onyomi="" kunyomi="byu" english=""></card>
+        <card character="ビョ" onyomi="" kunyomi="byo" english=""></card>
+        <card character="パ" onyomi="" kunyomi="pa" english=""></card>
+        <card character="ピ" onyomi="" kunyomi="pi" english=""></card>
+        <card character="プ" onyomi="" kunyomi="pu" english=""></card>
+        <card character="ペ" onyomi="" kunyomi="pe" english=""></card>
+        <card character="ポ" onyomi="" kunyomi="po" english=""></card>
+        <card character="ピャ" onyomi="" kunyomi="pya" english=""></card>
+        <card character="ピュ" onyomi="" kunyomi="pyu" english=""></card>
+        <card character="ピョ" onyomi="" kunyomi="pyo" english=""></card>
+        <card character="(ユェ) イェ" onyomi="" kunyomi="ye" english=""></card>
+        <card character="ヴァ" onyomi="" kunyomi="va" english=""></card>
+        <card character="ヴィ" onyomi="" kunyomi="vi" english=""></card>
+        <card character="ヴ" onyomi="" kunyomi="vu" english=""></card>
+        <card character="(ヹ) ヴェ" onyomi="" kunyomi="ve" english=""></card>
+        <card character="(ヺ) ヴォ" onyomi="" kunyomi="vo" english=""></card>
+        <card character="ヴャ" onyomi="" kunyomi="vya" english=""></card>
+        <card character="ヴュ" onyomi="" kunyomi="vyu" english=""></card>
+        <card character="ヴョ" onyomi="" kunyomi="vyo" english=""></card>
+        <card character="シェ" onyomi="" kunyomi="she" english=""></card>
+        <card character="ジェ" onyomi="" kunyomi="je" english=""></card>
+        <card character="チェ" onyomi="" kunyomi="che" english=""></card>
+        <card character="スィ" onyomi="" kunyomi="si" english=""></card>
+        <card character="スャ" onyomi="" kunyomi="sya" english=""></card>
+        <card character="スュ" onyomi="" kunyomi="syu" english=""></card>
+        <card character="スョ" onyomi="" kunyomi="syo" english=""></card>
+        <card character="ズィ" onyomi="" kunyomi="zi" english=""></card>
+        <card character="ズャ" onyomi="" kunyomi="zya" english=""></card>
+        <card character="ズュ" onyomi="" kunyomi="zyu" english=""></card>
+        <card character="ズョ" onyomi="" kunyomi="zyo" english=""></card>
+        <card character="ティ" onyomi="" kunyomi="ti" english=""></card>
+        <card character="トゥ" onyomi="" kunyomi="tu" english=""></card>
+        <card character="テャ" onyomi="" kunyomi="tya" english=""></card>
+        <card character="テュ" onyomi="" kunyomi="tyu" english=""></card>
+        <card character="テョ" onyomi="" kunyomi="tyo" english=""></card>
+        <card character="ディ" onyomi="" kunyomi="di" english=""></card>
+        <card character="ドゥ" onyomi="" kunyomi="du" english=""></card>
+        <card character="デャ" onyomi="" kunyomi="dya" english=""></card>
+        <card character="デュ" onyomi="" kunyomi="dyu" english=""></card>
+        <card character="デョ" onyomi="" kunyomi="dyo" english=""></card>
+        <card character="ツァ" onyomi="" kunyomi="tsa" english=""></card>
+        <card character="ツィ" onyomi="" kunyomi="tsi" english=""></card>
+        <card character="ツェ" onyomi="" kunyomi="tse" english=""></card>
+        <card character="ツォ" onyomi="" kunyomi="tso" english=""></card>
+        <card character="ファ" onyomi="" kunyomi="fa" english=""></card>
+        <card character="フィ" onyomi="" kunyomi="fi" english=""></card>
+        <card character="ホゥ" onyomi="" kunyomi="hu" english=""></card>
+        <card character="フェ" onyomi="" kunyomi="fe" english=""></card>
+        <card character="フォ" onyomi="" kunyomi="fo" english=""></card>
+        <card character="フャ" onyomi="" kunyomi="fya" english=""></card>
+        <card character="フュ" onyomi="" kunyomi="fyu" english=""></card>
+        <card character="フョ" onyomi="" kunyomi="fyo" english=""></card>
+        <card character="リェ" onyomi="" kunyomi="rye" english=""></card>
+        <card character="ウァ" onyomi="" kunyomi="wa" english=""></card>
+        <card character="ウィ" onyomi="" kunyomi="wi" english=""></card>
+        <card character="ウェ" onyomi="" kunyomi="we" english=""></card>
+        <card character="ウォ" onyomi="" kunyomi="wo" english=""></card>
+        <card character="ウャ" onyomi="" kunyomi="wya" english=""></card>
+        <card character="ウュ" onyomi="" kunyomi="wyu" english=""></card>
+        <card character="ウョ" onyomi="" kunyomi="wyo" english=""></card>
+        <card character="(クヮ) クァ" onyomi="" kunyomi="kwa" english=""></card>
+        <card character="クィ" onyomi="" kunyomi="kwi" english=""></card>
+        <card character="クゥ" onyomi="" kunyomi="kwu" english=""></card>
+        <card character="クェ" onyomi="" kunyomi="kwe" english=""></card>
+        <card character="クォ" onyomi="" kunyomi="kwo" english=""></card>
+        <card character="(グヮ) グァ" onyomi="" kunyomi="gwa" english=""></card>
+        <card character="グィ" onyomi="" kunyomi="gwi" english=""></card>
+        <card character="グゥ" onyomi="" kunyomi="gwu" english=""></card>
+        <card character="グェ" onyomi="" kunyomi="gwe" english=""></card>
+        <card character="グォ" onyomi="" kunyomi="gwo" english=""></card>
+        <card character="ヵ" onyomi="" kunyomi="small ka" english=""></card>
+        <card character="ヶ" onyomi="" kunyomi="small ke" english=""></card></grade>
+	<grade name="hiragana">
+        <card character="あ" onyomi="" kunyomi="a" english=""></card>
+        <card character="い" onyomi="" kunyomi="i" english=""></card>
+        <card character="う" onyomi="" kunyomi="u" english=""></card>
+        <card character="え" onyomi="" kunyomi="e" english=""></card>
+        <card character="お" onyomi="" kunyomi="o" english=""></card>
+        <card character="か" onyomi="" kunyomi="ka" english=""></card>
+        <card character="き" onyomi="" kunyomi="ki" english=""></card>
+        <card character="く" onyomi="" kunyomi="ku" english=""></card>
+        <card character="け" onyomi="" kunyomi="ke" english=""></card>
+        <card character="こ" onyomi="" kunyomi="ko" english=""></card>
+        <card character="きゃ" onyomi="" kunyomi="kya" english=""></card>
+        <card character="きゅ" onyomi="" kunyomi="kyu" english=""></card>
+        <card character="きょ" onyomi="" kunyomi="kyo" english=""></card>
+        <card character="さ" onyomi="" kunyomi="sa" english=""></card>
+        <card character="し" onyomi="" kunyomi="shi" english=""></card>
+        <card character="す" onyomi="" kunyomi="su" english=""></card>
+        <card character="せ" onyomi="" kunyomi="se" english=""></card>
+        <card character="そ" onyomi="" kunyomi="so" english=""></card>
+        <card character="しゃ" onyomi="" kunyomi="sha" english=""></card>
+        <card character="しゅ" onyomi="" kunyomi="shu" english=""></card>
+        <card character="しょ" onyomi="" kunyomi="sho" english=""></card>
+        <card character="た" onyomi="" kunyomi="ta" english=""></card>
+        <card character="ち" onyomi="" kunyomi="chi" english=""></card>
+        <card character="つ" onyomi="" kunyomi="tsu" english=""></card>
+        <card character="て" onyomi="" kunyomi="te" english=""></card>
+        <card character="と" onyomi="" kunyomi="to" english=""></card>
+        <card character="ちゃ" onyomi="" kunyomi="cha" english=""></card>
+        <card character="ちゅ" onyomi="" kunyomi="chu" english=""></card>
+        <card character="ちょ" onyomi="" kunyomi="cho" english=""></card>
+        <card character="な" onyomi="" kunyomi="na" english=""></card>
+        <card character="に" onyomi="" kunyomi="ni" english=""></card>
+        <card character="ぬ" onyomi="" kunyomi="nu" english=""></card>
+        <card character="ね" onyomi="" kunyomi="ne" english=""></card>
+        <card character="の" onyomi="" kunyomi="no" english=""></card>
+        <card character="にゃ" onyomi="" kunyomi="nya" english=""></card>
+        <card character="にゅ" onyomi="" kunyomi="nyu" english=""></card>
+        <card character="にょ" onyomi="" kunyomi="nyo" english=""></card>
+        <card character="は" onyomi="" kunyomi="ha" english=""></card>
+        <card character="ひ" onyomi="" kunyomi="hi" english=""></card>
+        <card character="ふ" onyomi="" kunyomi="fu" english=""></card>
+        <card character="へ" onyomi="" kunyomi="he" english=""></card>
+        <card character="ほ" onyomi="" kunyomi="ho" english=""></card>
+        <card character="ひゃ" onyomi="" kunyomi="hya" english=""></card>
+        <card character="ひゅ" onyomi="" kunyomi="hyu" english=""></card>
+        <card character="ひょ" onyomi="" kunyomi="hyo" english=""></card>
+        <card character="ま" onyomi="" kunyomi="ma" english=""></card>
+        <card character="み" onyomi="" kunyomi="mi" english=""></card>
+        <card character="む" onyomi="" kunyomi="mu" english=""></card>
+        <card character="め" onyomi="" kunyomi="me" english=""></card>
+        <card character="も" onyomi="" kunyomi="mo" english=""></card>
+        <card character="みゃ" onyomi="" kunyomi="mya" english=""></card>
+        <card character="みゅ" onyomi="" kunyomi="myu" english=""></card>
+        <card character="みょ" onyomi="" kunyomi="myo" english=""></card>
+        <card character="や" onyomi="" kunyomi="ya" english=""></card>
+        <card character="ゆ" onyomi="" kunyomi="yu" english=""></card>
+        <card character="よ" onyomi="" kunyomi="yo" english=""></card>
+        <card character="ら" onyomi="" kunyomi="ra" english=""></card>
+        <card character="り" onyomi="" kunyomi="ri" english=""></card>
+        <card character="る" onyomi="" kunyomi="ru" english=""></card>
+        <card character="れ" onyomi="" kunyomi="re" english=""></card>
+        <card character="ろ" onyomi="" kunyomi="ro" english=""></card>
+        <card character="りゃ" onyomi="" kunyomi="rya" english=""></card>
+        <card character="りゅ" onyomi="" kunyomi="ryu" english=""></card>
+        <card character="りょ" onyomi="" kunyomi="ryo" english=""></card>
+        <card character="わ" onyomi="" kunyomi="wa" english=""></card>
+        <card character="ゐ" onyomi="" kunyomi="wi" english=""></card>
+        <card character="ゑ" onyomi="" kunyomi="we" english=""></card>
+        <card character="を" onyomi="" kunyomi="wo" english=""></card>
+        <card character="が" onyomi="" kunyomi="ga" english=""></card>
+        <card character="ぎ" onyomi="" kunyomi="gi" english=""></card>
+        <card character="ぐ" onyomi="" kunyomi="gu" english=""></card>
+        <card character="げ" onyomi="" kunyomi="ge" english=""></card>
+        <card character="ご" onyomi="" kunyomi="go" english=""></card>
+        <card character="ぎゃ" onyomi="" kunyomi="gya" english=""></card>
+        <card character="ぎゅ" onyomi="" kunyomi="gyu" english=""></card>
+        <card character="ぎょ" onyomi="" kunyomi="gyo" english=""></card>
+        <card character="ざ" onyomi="" kunyomi="za" english=""></card>
+        <card character="じ" onyomi="" kunyomi="ji" english=""></card>
+        <card character="ず" onyomi="" kunyomi="zu" english=""></card>
+        <card character="ぜ" onyomi="" kunyomi="ze" english=""></card>
+        <card character="ぞ" onyomi="" kunyomi="zo" english=""></card>
+        <card character="じゃ" onyomi="" kunyomi="ja" english=""></card>
+        <card character="じゅ" onyomi="" kunyomi="ju" english=""></card>
+        <card character="じょ" onyomi="" kunyomi="jo" english=""></card>
+        <card character="だ" onyomi="" kunyomi="da" english=""></card>
+        <card character="ぢ" onyomi="" kunyomi="(ji)" english=""></card>
+        <card character="づ" onyomi="" kunyomi="(zu)" english=""></card>
+        <card character="で" onyomi="" kunyomi="de" english=""></card>
+        <card character="ど" onyomi="" kunyomi="do" english=""></card>
+        <card character="ぢゃ" onyomi="" kunyomi="(ja)" english=""></card>
+        <card character="ぢゅ" onyomi="" kunyomi="(ju)" english=""></card>
+        <card character="ぢょ" onyomi="" kunyomi="(jo)" english=""></card>
+        <card character="ば" onyomi="" kunyomi="ba" english=""></card>
+        <card character="び" onyomi="" kunyomi="bi" english=""></card>
+        <card character="ぶ" onyomi="" kunyomi="bu" english=""></card>
+        <card character="べ" onyomi="" kunyomi="be" english=""></card>
+        <card character="ぼ" onyomi="" kunyomi="bo" english=""></card>
+        <card character="びゃ" onyomi="" kunyomi="bya" english=""></card>
+        <card character="びゅ" onyomi="" kunyomi="byu" english=""></card>
+        <card character="びょ" onyomi="" kunyomi="byo" english=""></card>
+        <card character="ぱ" onyomi="" kunyomi="pa" english=""></card>
+        <card character="ぴ" onyomi="" kunyomi="pi" english=""></card>
+        <card character="ぷ" onyomi="" kunyomi="pu" english=""></card>
+        <card character="ぺ" onyomi="" kunyomi="pe" english=""></card>
+        <card character="ぽ" onyomi="" kunyomi="po" english=""></card>
+        <card character="ぴゃ" onyomi="" kunyomi="pya" english=""></card>
+        <card character="ぴゅ" onyomi="" kunyomi="pyu" english=""></card>
+        <card character="ぴょ" onyomi="" kunyomi="pyo" english=""></card></grade></lessons>
