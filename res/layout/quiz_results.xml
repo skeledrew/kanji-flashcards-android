@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/quiz_results_layout"
+	android:orientation="vertical"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:gravity="center"
+    >
+    <TextView
+    	android:layout_height="wrap_content"
+    	android:layout_width="wrap_content"
+    	android:text="You scored:"
+    	android:textSize="16px"
+    	/>
+    <TextView
+    	android:id="@+id/quiz_percent"
+    	android:layout_height="wrap_content"
+    	android:layout_width="wrap_content"
+    	android:text="90%"
+    	android:textSize="24px"
+    	android:textColor="#20f020"
+    	/>
+    <TextView
+    	android:id="@+id/quiz_count"
+    	android:layout_height="wrap_content"
+    	android:layout_width="wrap_content"
+    	android:text="9/10"
+    	android:textSize="20px"
+    	android:textColor="#20c020"
+    	/>
+    <Button
+    	android:id="@+id/quiz_okay_button"
+    	android:layout_height="wrap_content"
+    	android:layout_width="fill_parent"
+    	android:text="Okay"
+    	/>
+</LinearLayout>
