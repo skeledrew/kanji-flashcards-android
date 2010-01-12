@@ -1,0 +1,6 @@
+#summary The to-do list for the Kanji flashcards application
+
+  * Put in a link in the menu to open a browser link to a wiki page on this site where users can report errors.
+  * "You are showing the kun'yomi for woman (on'na) as "hito""
+  * "I would love to get a feature "autoplay quiz mode" that just shows kanji/kana a couple of seconds and then goes on  to the next one without needing me for pressing a button"
+  * "it would be helpful if the signs would appear larger in this mode as I have to recognize them from half a meter away"
