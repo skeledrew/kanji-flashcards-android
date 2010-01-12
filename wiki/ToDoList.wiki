@@ -1,10 +1,8 @@
 #summary The to-do list for the Kanji flashcards application
 
-Welcome! This page is a list of things to do for the Kanji flashcards android application. If you've been directed here from the "report an error" link in the application, please edit this page and add the error to the top of this list:
+Welcome! This page is a list of things to do for the Kanji flashcards android application. Listed first are the errors in translations and data. The data and translations for the whole set of Kanji are in the file http://code.google.com/p/kanji-flashcards-android/source/browse/trunk/res/xml/lessons.xml. If there are any errors you see let me know at joe@daverin.com
 
   * You are showing the kun'yomi for woman (on'na) as "hito"
-
-The following to-do items are more feature requests and code issues. If you have suggestions feel free to leave them but please put data errors (wrong translations etc) in the above list:
 
   * Put in a link in the menu to open a browser link to a wiki page on this site where users can report errors.
   * "I would love to get a feature "autoplay quiz mode" that just shows kanji/kana a couple of seconds and then goes on  to the next one without needing me for pressing a button"
