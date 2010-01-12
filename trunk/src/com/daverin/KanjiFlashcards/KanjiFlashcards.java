@@ -110,13 +110,13 @@ public class KanjiFlashcards extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         boolean result = super.onCreateOptionsMenu(menu);
-        menu.add(1, REVIEW_MODE_ID, 0, "Study mode");
-        menu.add(2, PRACTICE_MODE_ID, 0, "Practice mode");
-        SubMenu quiz_size_menu = menu.addSubMenu(3, QUIZ_SIZE_MENU, 0, "Quiz mode");
+        menu.add(1, REVIEW_MODE_ID, 1, "Study mode");
+        menu.add(2, PRACTICE_MODE_ID, 2, "Practice mode");
+        SubMenu quiz_size_menu = menu.addSubMenu(3, QUIZ_SIZE_MENU, 3, "Quiz mode");
         quiz_size_menu.add(4, QUIZ_20_ID, 1, "20 questions");
         quiz_size_menu.add(5, QUIZ_50_ID, 2, "50 questions");
         quiz_size_menu.add(6, QUIZ_100_ID, 3, "100 questions");
-        menu.add(7, CHOOSE_CARDS_ID, 0, "Choose cards");
+        menu.add(7, CHOOSE_CARDS_ID, 4, "Choose cards");
         return result;
     }
     
