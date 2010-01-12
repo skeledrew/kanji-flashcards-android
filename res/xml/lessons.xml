@@ -38,7 +38,7 @@
 		<card character="犬" onyomi="ken" kunyomi="inu" english="dog"></card>
 		<card character="人" onyomi="jin, nin" kunyomi="hito" english="person"></card>
 		<card character="名" onyomi="mei, myō" kunyomi="na" english="name"></card>
-		<card character="女" onyomi="jo, nyo" kunyomi="hito" english="female"></card>
+		<card character="女" onyomi="jo, nyo" kunyomi="onna" english="female"></card>
 		<card character="男" onyomi="dan" kunyomi="otoko" english="male"></card>
 		<card character="子" onyomi="shi, su" kunyomi="ko" english="child"></card>
 		<card character="目" onyomi="moku" kunyomi="me" english="eye"></card>
