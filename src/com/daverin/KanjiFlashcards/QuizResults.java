@@ -17,7 +17,6 @@ public class QuizResults extends Activity {
         ((TextView)findViewById(R.id.quiz_count)).setText(Global.current_deck_.quizCountString());
        
         ((TextView)findViewById(R.id.quiz_okay_button)).setOnClickListener(new View.OnClickListener() {
-			@Override
 			public void onClick(View v) {
 				Intent i = new Intent();
 				setResult(RESULT_OK, i);

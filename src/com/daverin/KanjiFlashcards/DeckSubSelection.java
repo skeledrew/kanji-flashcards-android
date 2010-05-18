@@ -52,7 +52,6 @@ public class DeckSubSelection extends Activity {
     					LinearLayout.LayoutParams.FILL_PARENT,
     					LinearLayout.LayoutParams.WRAP_CONTENT));
         okay_button.setOnClickListener(new View.OnClickListener() {
-			@Override
 			public void onClick(View v) {
 				for (int i = 0; i < subselection_buttons_.size(); ++i) {
 					if (subselection_buttons_.elementAt(i).isChecked()) {

@@ -59,7 +59,6 @@ public class KanjiFlashcards extends Activity {
         
         // The yes and no buttons always have the same simple listeners.
         findViewById(R.id.no_button).setOnClickListener(new View.OnClickListener() {
-			@Override
 			public void onClick(View v) {
 				if (quiz_mode_) {
 					Global.current_deck_.quizWrong();
@@ -70,7 +69,6 @@ public class KanjiFlashcards extends Activity {
 			}
         });
         findViewById(R.id.yes_button).setOnClickListener(new View.OnClickListener() {
-			@Override
 			public void onClick(View v) {
 				if (quiz_mode_) {
 					Global.current_deck_.quizRight();
