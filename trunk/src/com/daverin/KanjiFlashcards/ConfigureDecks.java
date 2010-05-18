@@ -19,7 +19,6 @@ public class ConfigureDecks extends Activity {
 		public DeckLongClickListener(int deck_index) {
 			deck_index_ = deck_index;
 		}
-		@Override
 		public boolean onLongClick(View v) {
 			Intent i = new Intent(v.getContext(), DeckSubSelection.class);
 			i.putExtra("deck_index", deck_index_);
@@ -36,7 +35,6 @@ public class ConfigureDecks extends Activity {
 		public DeckClickListener(int deck_index) {
 			deck_index_ = deck_index;
 		}
-		@Override
 		public void onClick(View v) {
 			for (int i = 0; i < Global.deck_sub_selections_.elementAt(deck_index_).size(); ++i) {
 				Global.deck_sub_selections_.elementAt(deck_index_).setElementAt(deck_buttons_.elementAt(deck_index_).isChecked(), i);
@@ -78,7 +76,6 @@ public class ConfigureDecks extends Activity {
     					LinearLayout.LayoutParams.FILL_PARENT,
     					LinearLayout.LayoutParams.WRAP_CONTENT));
         okay_button.setOnClickListener(new View.OnClickListener() {
-			@Override
 			public void onClick(View v) {
 				// recalculate the current deck contents
 				Global.current_deck_.clearCards();
