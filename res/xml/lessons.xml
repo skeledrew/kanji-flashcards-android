@@ -24,7 +24,7 @@
 		<card character="年" onyomi="nen" kunyomi="toshi" english="year"></card>
 		<card character="早" onyomi="sō" kunyomi="haya-i" english="early"></card>
 		<card character="木" onyomi="moku" kunyomi="ki" english="tree"></card>
-		<card character="林" onyomi="rin" kunyomi="hiyashi" english="woods"></card>
+		<card character="林" onyomi="rin" kunyomi="hayashi" english="small forest"></card>
 		<card character="山" onyomi="san" kunyomi="yama" english="mountain"></card>
 		<card character="川" onyomi="sen" kunyomi="kawa" english="river"></card>
 		<card character="土" onyomi="do" kunyomi="tsuchi" english="soil"></card>
@@ -49,7 +49,7 @@
 		<card character="見" onyomi="ken" kunyomi="mi-ru" english="see"></card>
 		<card character="音" onyomi="on" kunyomi="ne, oto" english="sound"></card>
 		<card character="力" onyomi="riki, ryoku" kunyomi="chikara" english="power"></card>
-		<card character="気" onyomi="ki" kunyomi="iki" english="spirit"></card>
+		<card character="気" onyomi="ki" kunyomi="" english="spirit"></card>
 		<card character="円" onyomi="en" kunyomi="maru" english="circle, yen"></card>
 		<card character="入" onyomi="nyū" kunyomi="hai-ru, i-ru" english="enter"></card>
 		<card character="出" onyomi="shutsu" kunyomi="de-ru" english="exit"></card>
@@ -58,7 +58,7 @@
 		<card character="先" onyomi="sen" kunyomi="saki" english="previous"></card>
 		<card character="夕" onyomi="seki" kunyomi="yū" english="evening"></card>
 		<card character="本" onyomi="hon" kunyomi="moto" english="book"></card>
-		<card character="文" onyomi="bun, mon" kunyomi="fumi" english="writing"></card>
+		<card character="文" onyomi="bun, mon" kunyomi="fumi" english="writing, letter"></card>
 		<card character="字" onyomi="ji" kunyomi="" english="character"></card>
 		<card character="学" onyomi="gaku" kunyomi="mana-bu" english="study"></card>
 		<card character="校" onyomi="kō" kunyomi="" english="school"></card>
@@ -96,7 +96,7 @@
 		<card character="交" onyomi="kō" kunyomi="maji-waru" english="mix"></card>
 		<card character="光" onyomi="kō" kunyomi="hikari" english="light"></card>
 		<card character="角" onyomi="kaku" kunyomi="kado, tsuno, sumi" english="angle, corner"></card>
-		<card character="計" onyomi="kei" kunyomi="haka-run" english="measure"></card>
+		<card character="計" onyomi="kei" kunyomi="haka-ru" english="measure"></card>
 		<card character="直" onyomi="choku, jiki" kunyomi="tada-chi,nao-su" english="straight, connect"></card>
 		<card character="線" onyomi="sen" kunyomi="" english="line"></card>
 		<card character="矢" onyomi="shi" kunyomi="ya" english="arrow"></card>
@@ -169,7 +169,7 @@
 		<card character="通" onyomi="tsū" kunyomi="tō-ru" english="pass through"></card>
 		<card character="門" onyomi="mon" kunyomi="kado" english="gate"></card>
 		<card character="道" onyomi="dō" kunyomi="michi" english="road"></card>
-		<card character="話" onyomi="wa" kunyomi="hanashi" english="talk"></card>
+		<card character="話" onyomi="wa" kunyomi="hanashi, hana-su" english="talk"></card>
 		<card character="言" onyomi="gen, gon" kunyomi="i-u, koto" english="say"></card>
 		<card character="答" onyomi="tō" kunyomi="kota-eru" english="answer"></card>
 		<card character="声" onyomi="sei" kunyomi="koe" english="voice"></card>

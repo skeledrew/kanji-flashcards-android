@@ -222,8 +222,7 @@ public class KanjiFlashcards extends Activity {
 		((TextView)findViewById(R.id.onyomi)).setText(c.onyomi().toUpperCase());
 		((TextView)findViewById(R.id.kunyomi)).setText(c.kunyomi());
 		((TextView)findViewById(R.id.english)).setText(c.english());
-		double percent_right = (double)c.total_times_right() / c.total_times_shown() * 100.0;
-		((ProgressBar)findViewById(R.id.overall_score)).setProgress((int)(percent_right));
+		((ProgressBar)findViewById(R.id.overall_score)).setProgress((int) Math.round(100*(Global.current_deck_.getCurrentReviewIndex() + 1) / Global.current_deck_.numCards()));
     	((TextView)findViewById(R.id.kanji_number)).setText(
     			Integer.toString(Global.current_deck_.getCurrentReviewIndex() + 1) + " / " +
     			Integer.toString(Global.current_deck_.numCards()));
