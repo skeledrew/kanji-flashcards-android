@@ -1,19 +1,18 @@
 package com.daverin.KanjiFlashcards;
 
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
+
 public class Card {
-	public Card(String character, String onyomi, String kunyomi, String english) {
-		character_ = character;
-		onyomi_ = onyomi;
-		kunyomi_ = kunyomi;
-		english_ = english;
+	public Card(Map<String, String> sides) {
+		sides_ = Collections.unmodifiableMap(
+				new HashMap<String, String>(sides));
 		total_times_shown_ = 0;
 		total_times_right_ = 0;
 	}
 	
-	public String character() { return character_; }
-	public String onyomi() { return onyomi_; }
-	public String kunyomi() { return kunyomi_; }
-	public String english() { return english_; }
+	public Map<String, String> sides() { return sides_; }
 	public int total_times_shown() { return total_times_shown_; }
 	public void set_total_times_shown(int total_times_shown) { total_times_shown_ = total_times_shown; }
 	public int total_times_right() { return total_times_right_; }
@@ -22,11 +21,8 @@ public class Card {
 		if (correct) { total_times_right_++; }
 		total_times_shown_++;
 	}
-	
-	private String character_;
-	private String onyomi_;
-	private String kunyomi_;
-	private String english_;
+
+	private Map<String, String> sides_;
 	private int total_times_shown_;
 	private int total_times_right_;
 }
