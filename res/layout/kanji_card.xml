@@ -6,50 +6,11 @@
     android:stretchColumns="0"
     >
  <TableRow
+     android:id="@+id/card_tablerow"
      android:gravity="center"
      android:layout_weight="100.0"
      >
-  <TextView android:id="@+id/character"
-      android:textSize="70.0px"
-      android:textColor="#fff"
-      android:text="一"
-      android:gravity="bottom|center_horizontal"
-      android:layout_height="fill_parent"
-      />
- </TableRow>
- <TableRow
-     android:gravity="center"
-     android:layout_weight="100.0"
-     >
-  <LinearLayout
-    android:orientation="vertical"
-    android:layout_height="fill_parent"
-    >
-   <TextView android:id="@+id/onyomi"
-       android:textSize="20.0px"
-       android:textColor="#99F"
-       android:text="onyomi"
-       android:layout_height="wrap_content"
-       android:layout_width="fill_parent"
-       android:gravity="top|center_horizontal"
-       />
-   <TextView android:id="@+id/kunyomi"
-       android:textSize="18.0px"
-       android:textColor="#99F"
-       android:text="kunyomi"
-       android:layout_height="wrap_content"
-       android:layout_width="fill_parent"
-       android:gravity="top|center_horizontal"
-       />
-   <TextView android:id="@+id/english"
-       android:textSize="16.0px"
-       android:textColor="#EEE"
-       android:text="english"
-       android:layout_height="wrap_content"
-       android:layout_width="fill_parent"
-       android:gravity="top|center_horizontal"
-       />
-  </LinearLayout>
+     <android.webkit.WebView android:id="@+id/card_webview" android:layout_width="fill_parent" android:layout_height="wrap_content"></android.webkit.WebView>
  </TableRow>
  <TableRow
    android:layout_height="wrap_content"

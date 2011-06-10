@@ -6,23 +6,32 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
 import java.util.Vector;
 
+import org.apache.http.protocol.HTTP;
 import org.xmlpull.v1.XmlPullParserException;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.XmlResourceParser;
 import android.os.Bundle;
+import android.text.TextUtils;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.SubMenu;
 import android.view.View;
+import android.webkit.WebView;
+import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TableLayout;
+import android.widget.TableRow;
 import android.widget.TextView;
 
 public class KanjiFlashcards extends Activity {
@@ -39,6 +48,43 @@ public class KanjiFlashcards extends Activity {
 	public static final int CONFIGURE_DECKS = 1;
 	public static final int QUIZ_RESULTS = 2;
 	
+	private Button no_button_, yes_button_;
+	private ProgressBar overall_score_;
+	private TableLayout card_layout_;
+	private TableRow card_tablerow_;
+	private TextView kanji_number_;
+	private WebView card_webview_;
+
+	private Card current_card_;
+	
+	private final View.OnTouchListener screenTouchListener
+			= new View.OnTouchListener() {
+		public boolean onTouch(View v, MotionEvent event) {
+	    	if (event.getAction() == MotionEvent.ACTION_UP) {
+	    		if (study_mode_) {
+	    			int width = card_layout_.getWidth();
+		    		move_backwards_ = event.getX() < (width / 2.0);
+		    		showNextCard();
+	    		} else if (no_button_.getVisibility() == View.INVISIBLE) {
+	    			showCard(current_card_.sides(), true);
+	    	    	no_button_.setVisibility(View.VISIBLE);
+	    	    	yes_button_.setVisibility(View.VISIBLE);
+	    		}
+	    	}
+    		return true;
+		}
+	};
+	
+	private void findViews() {
+        card_webview_ = (WebView)findViewById(R.id.card_webview);
+        yes_button_ = (Button)findViewById(R.id.yes_button);
+        no_button_ = (Button)findViewById(R.id.no_button);	
+        card_layout_ = (TableLayout)findViewById(R.id.card_layout);
+        card_tablerow_ = (TableRow)findViewById(R.id.card_tablerow);
+        overall_score_ = (ProgressBar)findViewById(R.id.overall_score);
+        kanji_number_ = (TextView)findViewById(R.id.kanji_number);
+	}
+	
 	/** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -51,14 +97,18 @@ public class KanjiFlashcards extends Activity {
         // as the current deck configuration (if saved).
         loadSavedConfiguration();
         
-        // The interface is designed specifically for japanese kanji character flash cards.
         setContentView(R.layout.kanji_card);
+        
+        findViews();
+        
+        card_webview_.setOnTouchListener(screenTouchListener);
+        card_tablerow_.setOnTouchListener(screenTouchListener);
         
         // This will set the initial card to be shown, when the interface is first created.
         showNextCard();
         
         // The yes and no buttons always have the same simple listeners.
-        findViewById(R.id.no_button).setOnClickListener(new View.OnClickListener() {
+        no_button_.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				if (quiz_mode_) {
 					Global.current_deck_.quizWrong();
@@ -68,7 +118,7 @@ public class KanjiFlashcards extends Activity {
 				showNextCard();
 			}
         });
-        findViewById(R.id.yes_button).setOnClickListener(new View.OnClickListener() {
+        yes_button_.setOnClickListener(new View.OnClickListener() {
 			public void onClick(View v) {
 				if (quiz_mode_) {
 					Global.current_deck_.quizRight();
@@ -77,7 +127,7 @@ public class KanjiFlashcards extends Activity {
 				}
 				showNextCard();
 			}
-        });
+        });        
     }
     
     @Override
@@ -86,23 +136,33 @@ public class KanjiFlashcards extends Activity {
     	super.onDestroy();
     }
     
-    @Override
-    public boolean onTouchEvent(MotionEvent event) {
-    	if (event.getAction() == MotionEvent.ACTION_UP) {
-    		if (study_mode_) {
-    			int width = ((TableLayout)findViewById(R.id.card_layout)).getWidth();
-	    		move_backwards_ = event.getX() < (width / 2.0);
-	    		showNextCard();
-    		} else if (findViewById(R.id.onyomi).getVisibility() == View.INVISIBLE) {
-    			findViewById(R.id.onyomi).setVisibility(View.VISIBLE);
-    	   		findViewById(R.id.kunyomi).setVisibility(View.VISIBLE);
-    	   		findViewById(R.id.english).setVisibility(View.VISIBLE);
-    	    	findViewById(R.id.no_button).setVisibility(View.VISIBLE);
-    	    	findViewById(R.id.yes_button).setVisibility(View.VISIBLE);
-    		}
-    		return true;
+    private void showCard(Map<String, String> sides, boolean show_answers) {
+    	StringBuilder card_html = new StringBuilder();
+
+    	card_html.append("<html>")
+    			.append("<head>");
+    	if (Global.style_ != null) {
+    		card_html.append("<style type=\"text/css\">")
+    				.append(TextUtils.htmlEncode(Global.style_))
+    				.append("</style>");
     	}
-    	return false;
+    	card_html.append("</head>")
+    			.append("<body>");
+    	for (String side : Global.side_order_) {
+    		if (sides.containsKey(side)
+    				&& (show_answers || side.equals("character"))) {
+            	card_html.append("<div class=\"")
+						.append(side)
+						.append("\">")
+						.append(TextUtils.htmlEncode(sides.get(side)))
+						.append("</div>");
+    		}
+    	}
+
+    	card_html.append("</body>");
+    	card_webview_.loadDataWithBaseURL(null, card_html.toString(), "text/html", HTTP.UTF_8, null);
+    	Log.i("card_html", card_html.toString());
+    	card_webview_.setBackgroundColor(0xff000000);
     }
     
     @Override
@@ -192,12 +252,11 @@ public class KanjiFlashcards extends Activity {
     }
     
     public void showNextCard() {
-    	Card c;
     	if (study_mode_) {
     		if (move_backwards_) {
-    			c = Global.current_deck_.getPreviousReviewCard();
+    			current_card_ = Global.current_deck_.getPreviousReviewCard();
     		} else {
-    			c = Global.current_deck_.getNextReviewCard();
+    			current_card_ = Global.current_deck_.getNextReviewCard();
     		}
     	} else if (quiz_mode_) {
     		if (Global.current_deck_.quizDone()) {
@@ -205,25 +264,19 @@ public class KanjiFlashcards extends Activity {
     			startActivityForResult(i, QUIZ_RESULTS);
     			return;
     		} else {
-    			c = Global.current_deck_.getNextQuizCard();
+    			current_card_ = Global.current_deck_.getNextQuizCard();
     		}
     	} else {
-    		c = Global.current_deck_.getNextPracticeCard();
+    		current_card_ = Global.current_deck_.getNextPracticeCard();
     	}
-    	((TextView)findViewById(R.id.character)).setText(c.character());
-   		findViewById(R.id.onyomi).setVisibility(study_mode_ ? View.VISIBLE : View.INVISIBLE);
-   		findViewById(R.id.kunyomi).setVisibility(study_mode_ ? View.VISIBLE : View.INVISIBLE);
-   		findViewById(R.id.english).setVisibility(study_mode_ ? View.VISIBLE : View.INVISIBLE);
-   		findViewById(R.id.overall_score).setVisibility(study_mode_ ? View.VISIBLE : View.INVISIBLE);
-   		findViewById(R.id.kanji_number).setVisibility(study_mode_ ? View.VISIBLE : View.INVISIBLE);
-    	findViewById(R.id.no_button).setVisibility(View.INVISIBLE);
-    	findViewById(R.id.yes_button).setVisibility(View.INVISIBLE);
+    	showCard(current_card_.sides(), study_mode_);
+   		overall_score_.setVisibility(study_mode_ ? View.VISIBLE : View.INVISIBLE);
+   		kanji_number_.setVisibility(study_mode_ ? View.VISIBLE : View.INVISIBLE);
+    	no_button_.setVisibility(View.INVISIBLE);
+    	yes_button_.setVisibility(View.INVISIBLE);
     	
-		((TextView)findViewById(R.id.onyomi)).setText(c.onyomi().toUpperCase());
-		((TextView)findViewById(R.id.kunyomi)).setText(c.kunyomi());
-		((TextView)findViewById(R.id.english)).setText(c.english());
-		((ProgressBar)findViewById(R.id.overall_score)).setProgress((int) Math.round(100*(Global.current_deck_.getCurrentReviewIndex() + 1) / Global.current_deck_.numCards()));
-    	((TextView)findViewById(R.id.kanji_number)).setText(
+		overall_score_.setProgress((int) Math.round(100*(Global.current_deck_.getCurrentReviewIndex() + 1) / Global.current_deck_.numCards()));
+    	kanji_number_.setText(
     			Integer.toString(Global.current_deck_.getCurrentReviewIndex() + 1) + " / " +
     			Integer.toString(Global.current_deck_.numCards()));
     }
@@ -233,8 +286,9 @@ public class KanjiFlashcards extends Activity {
     	XmlResourceParser lessons = getResources().getXml(R.xml.lessons);
     	try {
 	    	int next_tag = lessons.next();
+	    	Global.side_order_ = new ArrayList<String>();
 	    	Global.decks_ = new Vector<Deck>();
-	    	Global.deck_sub_selections_ = new Vector<Vector<Boolean>>();
+	    	Global.deck_sub_selections_ = new Vector<List<Boolean>>();
 	    	Global.card_map_ = new HashMap<String, Card>();
 	    	Deck current_deck = new Deck("unknown");
 	    	while (next_tag != XmlResourceParser.END_DOCUMENT) {
@@ -252,13 +306,30 @@ public class KanjiFlashcards extends Activity {
 	    				}
 	    				current_deck = new Deck(lessons.getAttributeValue(null, "name"));
 	    			} else if (lessons.getName().equals("card")) {
-	    				Card next_card = new Card(
-	    						lessons.getAttributeValue(null, "character"),
-	    						lessons.getAttributeValue(null, "onyomi"),
-	    						lessons.getAttributeValue(null, "kunyomi"),
-	    						lessons.getAttributeValue(null, "english"));
+	    				Map<String, String> allSides = new HashMap<String, String>();
+	    				while ((next_tag = lessons.next()) != XmlResourceParser.END_TAG) {
+	    					String sideType = lessons.getAttributeValue(null, "type");
+	    					lessons.next(); // <side>{text}</side>
+	    					String sideValue = lessons.getText();
+	    					allSides.put(sideType, sideValue);
+	    					lessons.next(); // </side>
+	    				}
+	    				Card next_card = new Card(allSides);
 	    				current_deck.addCardToDeck(next_card);
-	    				Global.card_map_.put(next_card.character(), next_card);
+	    				Global.card_map_.put(next_card.sides().get("character"), next_card);
+	    			} else if (lessons.getName().equals("style")) {
+	    				StringBuilder style = new StringBuilder();
+	    				while (lessons.next() != XmlResourceParser.END_TAG) {
+	    					style.append(lessons.getText());
+	    				}
+	    				Global.style_ = style.toString();
+	    			} else if (lessons.getName().equals("sideOrder")) {
+	    				Global.side_order_ = new ArrayList<String>();
+	    				while ((next_tag = lessons.next()) != XmlResourceParser.END_TAG) {
+	    					lessons.next(); // <type>{text}</type>
+	    					Global.side_order_.add(lessons.getText());
+	    					lessons.next(); // </type>
+	    				}
 	    			}
 	    		}
 	    		next_tag = lessons.next();
@@ -302,16 +373,16 @@ public class KanjiFlashcards extends Activity {
 	    					String[] next_vals = next_line.split(",");
 	    					if (next_vals.length > 1) {
 	    						for (int i = 0; i < Global.decks_.size(); ++i) {
-	    							if (Global.decks_.elementAt(i).name().equals(next_vals[0])) {
+	    							if (Global.decks_.get(i).name().equals(next_vals[0])) {
 	    								int sub_index = 0;
-	    								while ((sub_index < Global.deck_sub_selections_.elementAt(i).size()) &&
+	    								while ((sub_index < Global.deck_sub_selections_.get(i).size()) &&
 	    										(sub_index + 1 < next_vals.length)) {
-	    									Global.deck_sub_selections_.elementAt(i).setElementAt(
-	    											Boolean.valueOf(next_vals[sub_index + 1]), sub_index);
+	    									Global.deck_sub_selections_.get(i).set(
+	    											sub_index, Boolean.valueOf(next_vals[sub_index + 1]));
 	    									if (Boolean.valueOf(next_vals[sub_index + 1])) {
-	    										for (int k = sub_index * 20; (k < (sub_index + 1) * 20) && (k < Global.decks_.elementAt(i).numCards()); ++k) {
+	    										for (int k = sub_index * 20; (k < (sub_index + 1) * 20) && (k < Global.decks_.get(i).numCards()); ++k) {
 	    											Global.current_deck_.addCardToDeck(
-	    													Global.decks_.elementAt(i).card(k));
+	    													Global.decks_.get(i).card(k));
 	    										}
 	    									}
 	    									++sub_index;
@@ -332,15 +403,15 @@ public class KanjiFlashcards extends Activity {
     	// at the end of all this, if nothing is selected, select the whole first grade
     	if ((Global.current_deck_ == null) || (Global.current_deck_.numCards() == 0)) {
     		Global.current_deck_ = new Deck("current");
-    		for (int i = 0; i < Global.decks_.elementAt(0).numCards(); ++i) {
-    			Global.current_deck_.addCardToDeck(Global.decks_.elementAt(0).card(i));
+    		for (int i = 0; i < Global.decks_.get(0).numCards(); ++i) {
+    			Global.current_deck_.addCardToDeck(Global.decks_.get(0).card(i));
     		}
-    		for (int i = 0; i < Global.deck_sub_selections_.elementAt(0).size(); ++i) {
-    			Global.deck_sub_selections_.elementAt(0).setElementAt(true, i);
+    		for (int i = 0; i < Global.deck_sub_selections_.get(0).size(); ++i) {
+    			Global.deck_sub_selections_.get(0).set(i, true);
     		}
     		for (int i = 1; i < Global.deck_sub_selections_.size(); ++i) {
-        		for (int j = 0; j < Global.deck_sub_selections_.elementAt(i).size(); ++j) {
-        			Global.deck_sub_selections_.elementAt(i).setElementAt(false, j);
+        		for (int j = 0; j < Global.deck_sub_selections_.get(i).size(); ++j) {
+        			Global.deck_sub_selections_.get(i).set(j, false);
         		}
         	}
     	}
@@ -358,17 +429,18 @@ public class KanjiFlashcards extends Activity {
         	while (it.hasNext()) {
         		String kanji = it.next();
         		if (Global.card_map_.get(kanji).total_times_shown() > 0) {
-        			String next_line = Global.card_map_.get(kanji).character() + "," +
-        					Integer.toString(Global.card_map_.get(kanji).total_times_right()) + "," +
-        					Integer.toString(Global.card_map_.get(kanji).total_times_shown()) + "\n";
+        			Card card_to_save = Global.card_map_.get(kanji);
+        			String next_line = kanji + "," +
+        					card_to_save.total_times_right() + "," +
+        					card_to_save.total_times_shown() + "\n";
         			output_file.write(next_line);
         		}
         	}
         	output_file.write("configuration\n");
         	for (int i = 0; i < Global.deck_sub_selections_.size(); ++i) {
-        		String next_line = Global.decks_.elementAt(i).name();
-        		for (int j = 0; j < Global.deck_sub_selections_.elementAt(i).size(); ++j) {
-        			next_line += "," + Boolean.toString(Global.deck_sub_selections_.elementAt(i).elementAt(j));
+        		String next_line = Global.decks_.get(i).name();
+        		for (int j = 0; j < Global.deck_sub_selections_.get(i).size(); ++j) {
+        			next_line += "," + Boolean.toString(Global.deck_sub_selections_.get(i).get(j));
         		}
         		output_file.write(next_line + "\n");
         	}

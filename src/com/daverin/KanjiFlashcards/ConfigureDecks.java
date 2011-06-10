@@ -36,8 +36,8 @@ public class ConfigureDecks extends Activity {
 			deck_index_ = deck_index;
 		}
 		public void onClick(View v) {
-			for (int i = 0; i < Global.deck_sub_selections_.elementAt(deck_index_).size(); ++i) {
-				Global.deck_sub_selections_.elementAt(deck_index_).setElementAt(deck_buttons_.elementAt(deck_index_).isChecked(), i);
+			for (int i = 0; i < Global.deck_sub_selections_.get(deck_index_).size(); ++i) {
+				Global.deck_sub_selections_.get(deck_index_).set(i, deck_buttons_.elementAt(deck_index_).isChecked());
 			}
 		}
 		
@@ -61,8 +61,8 @@ public class ConfigureDecks extends Activity {
         			new LinearLayout.LayoutParams(
         					LinearLayout.LayoutParams.FILL_PARENT,
         					LinearLayout.LayoutParams.WRAP_CONTENT));
-        	next_deck_button.setTextOn(Global.decks_.elementAt(i).name());
-        	next_deck_button.setTextOff(Global.decks_.elementAt(i).name());
+        	next_deck_button.setTextOn(Global.decks_.get(i).name());
+        	next_deck_button.setTextOff(Global.decks_.get(i).name());
         	next_deck_button.setOnLongClickListener(new DeckLongClickListener(i));
         	next_deck_button.setOnClickListener(new DeckClickListener(i));
         	deck_buttons_.add(next_deck_button);
@@ -80,10 +80,10 @@ public class ConfigureDecks extends Activity {
 				// recalculate the current deck contents
 				Global.current_deck_.clearCards();
 				for (int i = 0; i < Global.deck_sub_selections_.size(); ++i) {
-					for (int j = 0; j < Global.deck_sub_selections_.elementAt(i).size(); ++j) {
-						if (Global.deck_sub_selections_.elementAt(i).elementAt(j)) {
-							for (int k = j * 20; (k < (j + 1) * 20) && (k < Global.decks_.elementAt(i).numCards()); ++k) {
-								Global.current_deck_.addCardToDeck(Global.decks_.elementAt(i).card(k));
+					for (int j = 0; j < Global.deck_sub_selections_.get(i).size(); ++j) {
+						if (Global.deck_sub_selections_.get(i).get(j)) {
+							for (int k = j * 20; (k < (j + 1) * 20) && (k < Global.decks_.get(i).numCards()); ++k) {
+								Global.current_deck_.addCardToDeck(Global.decks_.get(i).card(k));
 							}
 						}
 					}
@@ -91,8 +91,8 @@ public class ConfigureDecks extends Activity {
 				
 				// if after all that there are no cards add the first grade
 				if (Global.current_deck_.numCards() == 0) {
-					for (int i = 0; i < Global.decks_.elementAt(0).numCards(); ++i) {
-						Global.current_deck_.addCardToDeck(Global.decks_.elementAt(0).card(i));
+					for (int i = 0; i < Global.decks_.get(0).numCards(); ++i) {
+						Global.current_deck_.addCardToDeck(Global.decks_.get(0).card(i));
 					}
 				}
 				Intent i = new Intent();
@@ -119,21 +119,21 @@ public class ConfigureDecks extends Activity {
     	for (int i = 0; i < Global.decks_.size(); ++i) {
     		boolean something_true = false;
     		boolean something_false = false;
-    		for (int j = 0; j < Global.deck_sub_selections_.elementAt(i).size(); ++j) {
-    			if (Global.deck_sub_selections_.elementAt(i).elementAt(j)) {
+    		for (int j = 0; j < Global.deck_sub_selections_.get(i).size(); ++j) {
+    			if (Global.deck_sub_selections_.get(i).get(j)) {
     				something_true = true;
     			} else {
     				something_false = true;
     			}
     		}
     		if (!something_true) {
-    			deck_buttons_.elementAt(i).setTextOn(Global.decks_.elementAt(i).name());
+    			deck_buttons_.elementAt(i).setTextOn(Global.decks_.get(i).name());
     			deck_buttons_.elementAt(i).setChecked(false);
     		} else {
     			if (something_false) {
-    				deck_buttons_.elementAt(i).setTextOn(Global.decks_.elementAt(i).name() + " (subset)");
+    				deck_buttons_.elementAt(i).setTextOn(Global.decks_.get(i).name() + " (subset)");
     			} else {
-    				deck_buttons_.elementAt(i).setTextOn(Global.decks_.elementAt(i).name());
+    				deck_buttons_.elementAt(i).setTextOn(Global.decks_.get(i).name());
     			}
     			deck_buttons_.elementAt(i).setChecked(true);
     		}
