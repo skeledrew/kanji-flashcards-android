@@ -9,10 +9,8 @@ import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.BitSet;
 import java.util.HashMap;
-import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
-import java.util.Vector;
 
 import org.apache.http.protocol.HTTP;
 import org.xmlpull.v1.XmlPullParserException;
@@ -35,7 +33,7 @@ import android.widget.TableRow;
 import android.widget.TextView;
 
 public class KanjiFlashcards extends Activity {
-  
+
   public static final int REVIEW_MODE_ID = Menu.FIRST;
   public static final int PRACTICE_MODE_ID = Menu.FIRST + 1;
   public static final int QUIZ_MODE_ID = Menu.FIRST + 2;
@@ -44,10 +42,10 @@ public class KanjiFlashcards extends Activity {
   public static final int QUIZ_50_ID = Menu.FIRST + 5;
   public static final int QUIZ_100_ID = Menu.FIRST + 6;
   public static final int CHOOSE_CARDS_ID = Menu.FIRST + 7;
-    
+
   public static final int CONFIGURE_DECKS = 1;
   public static final int QUIZ_RESULTS = 2;
-    
+
   private Button no_button_, yes_button_;
   private ProgressBar overall_score_;
   private TableLayout card_layout_;
@@ -56,7 +54,7 @@ public class KanjiFlashcards extends Activity {
   private WebView card_webview_;
 
   private Card current_card_;
-  
+
   private final View.OnTouchListener screenTouchListener
       = new View.OnTouchListener() {
     public boolean onTouch(View v, MotionEvent event) {
@@ -74,39 +72,39 @@ public class KanjiFlashcards extends Activity {
       return true;
     }
   };
-  
+
   private void findViews() {
     card_webview_ = (WebView)findViewById(R.id.card_webview);
     yes_button_ = (Button)findViewById(R.id.yes_button);
-    no_button_ = (Button)findViewById(R.id.no_button);  
+    no_button_ = (Button)findViewById(R.id.no_button);
     card_layout_ = (TableLayout)findViewById(R.id.card_layout);
     card_tablerow_ = (TableRow)findViewById(R.id.card_tablerow);
     overall_score_ = (ProgressBar)findViewById(R.id.overall_score);
     kanji_number_ = (TextView)findViewById(R.id.kanji_number);
   }
-  
+
   /** Called when the activity is first created. */
   @Override
   public void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    
+
     // This will read from an XML file those cards that are available to the system.
     loadAvailableDecks();
-    
+
     // This will read performance metrics that have been stored for the user as well
     // as the current deck configuration (if saved).
     loadSavedConfiguration();
-    
+
     setContentView(R.layout.kanji_card);
-    
+
     findViews();
-    
+
     card_webview_.setOnTouchListener(screenTouchListener);
     card_tablerow_.setOnTouchListener(screenTouchListener);
-    
+
     // This will set the initial card to be shown, when the interface is first created.
     showNextCard();
-    
+
     // The yes and no buttons always have the same simple listeners.
     no_button_.setOnClickListener(new View.OnClickListener() {
       public void onClick(View v) {
@@ -127,28 +125,28 @@ public class KanjiFlashcards extends Activity {
         }
         showNextCard();
       }
-    });    
+    });
   }
-  
+
   @Override
   public void onPause() {
     saveCurrentConfiguration();
     super.onPause();
   }
-  
+
   private void showCard(Map<String, String> sides, boolean show_answers) {
     StringBuilder card_html = new StringBuilder();
 
     card_html.append("<html>")
         .append("<head>");
-    if (style_ != null) {
+    if (collection_.style() != null) {
       card_html.append("<style type=\"text/css\">")
-          .append(TextUtils.htmlEncode(style_))
+          .append(TextUtils.htmlEncode(collection_.style()))
           .append("</style>");
     }
     card_html.append("</head>")
         .append("<body>");
-    for (String side : side_order_) {
+    for (String side : collection_.side_order()) {
       if (sides.containsKey(side)
           && (show_answers || side.equals("character"))) {
         card_html.append("<div class=\"")
@@ -163,7 +161,7 @@ public class KanjiFlashcards extends Activity {
     card_webview_.loadDataWithBaseURL(null, card_html.toString(), "text/html", HTTP.UTF_8, null);
     card_webview_.setBackgroundColor(0xff000000);
   }
-  
+
   @Override
   public boolean onCreateOptionsMenu(Menu menu) {
     boolean result = super.onCreateOptionsMenu(menu);
@@ -176,7 +174,7 @@ public class KanjiFlashcards extends Activity {
     menu.add(7, CHOOSE_CARDS_ID, 4, "Choose cards");
     return result;
   }
-  
+
   @Override
   public boolean onPrepareOptionsMenu(Menu menu) {
     menu.setGroupVisible(1, !study_mode_);
@@ -184,7 +182,7 @@ public class KanjiFlashcards extends Activity {
     menu.setGroupVisible(3, !quiz_mode_);
     return true;
   }
-  
+
   @Override
   public boolean onOptionsItemSelected(MenuItem item) {
     switch (item.getItemId()) {
@@ -194,9 +192,9 @@ public class KanjiFlashcards extends Activity {
       p.selected_subsets_list = new ArrayList<BitSet>(deck_sub_selections_);
       p.deck_names = new ArrayList<String>();
       p.deck_sizes = new ArrayList<Integer>();
-      for (Deck deck : decks_) {
+      for (Deck deck : collection_.decks()) {
         p.deck_names.add(deck.name());
-        p.deck_sizes.add(deck.numCards());
+        p.deck_sizes.add(deck.cards().size());
       }
       p.cards_per_subset = CARDS_PER_SUBSET;
       ConfigureDecks.PARAM.put(i, p);
@@ -232,15 +230,15 @@ public class KanjiFlashcards extends Activity {
     }
     return super.onOptionsItemSelected(item);
   }
-  
+
   private void startReviewMode() {
     study_mode_ = true;
     quiz_mode_ = false;
-    current_deck_.setCurrentReviewIndex(current_deck_.numCards());
+    current_deck_.setCurrentReviewIndex(current_deck_.cards().size());
     move_backwards_ = false;
     showNextCard();
   }
-  
+
   @Override
   public void onActivityResult(int requestCode, int resultCode, Intent intent) {
     super.onActivityResult(requestCode, resultCode, intent);
@@ -249,36 +247,39 @@ public class KanjiFlashcards extends Activity {
       case CONFIGURE_DECKS:
         deck_sub_selections_
             = ConfigureDecks.RETURN_SELECTED_SUBSETS_LIST.get(intent);
-        
+
+        List<Card> study_cards = new ArrayList<Card>();
+
         // recalculate the current deck contents
-        current_deck_.clearCards();
         for (int i = 0; i < deck_sub_selections_.size(); ++i) {
-          int subset_count = subsetsForDeckSize(decks_.get(i).numCards());
+          int subset_count
+              = subsetsForDeckSize(collection_.decks().get(i).cards().size());
           for (int j = 0; j < subset_count; ++j) {
             if (deck_sub_selections_.get(i).get(j)) {
               int start_card_index = j * CARDS_PER_SUBSET;
               int end_card_index = Math.min(
                   start_card_index + CARDS_PER_SUBSET,
-                  decks_.get(i).numCards());
+                  collection_.decks().get(i).cards().size());
               for (int k = start_card_index; k < end_card_index; ++k) {
-                current_deck_.addCardToDeck(decks_.get(i).card(k));
+                study_cards.add(collection_.decks().get(i).cards().get(k));
               }
             }
           }
         }
-        
-        // if after all that there are no cards add the first grade
-        if (current_deck_.numCards() == 0) {
-          for (int i = 0; i < decks_.get(0).numCards(); ++i) {
-            current_deck_.addCardToDeck(decks_.get(0).card(i));
-          }
-        }        
+
+        // if after all that there are no cards add the first deck
+        if (study_cards.isEmpty()) {
+          study_cards.addAll(collection_.decks().get(0).cards());
+        }
+
+        current_deck_ = new StudyDeck(study_cards);
+
         startReviewMode();
         break;
       }
     }
   }
-  
+
   public void showNextCard() {
     if (study_mode_) {
       if (move_backwards_) {
@@ -307,33 +308,36 @@ public class KanjiFlashcards extends Activity {
     kanji_number_.setVisibility(study_mode_ ? View.VISIBLE : View.INVISIBLE);
     no_button_.setVisibility(View.INVISIBLE);
     yes_button_.setVisibility(View.INVISIBLE);
-    
-    overall_score_.setProgress((int) Math.round(100*(current_deck_.getCurrentReviewIndex() + 1) / current_deck_.numCards()));
+
+    overall_score_.setProgress(Math.round(100*(current_deck_.getCurrentReviewIndex() + 1) / current_deck_.cards().size()));
     kanji_number_.setText(
         Integer.toString(current_deck_.getCurrentReviewIndex() + 1) + " / " +
-        Integer.toString(current_deck_.numCards()));
+        Integer.toString(current_deck_.cards().size()));
   }
-  
+
   public void loadAvailableDecks() {
     // This is a static file distributed with the package.
     XmlResourceParser lessons = getResources().getXml(R.xml.lessons);
     try {
       int next_tag = lessons.next();
-      side_order_ = new ArrayList<String>();
-      decks_ = new Vector<Deck>();
+      List<String> side_order = new ArrayList<String>();
+      List<Deck> decks = new ArrayList<Deck>();
+      String style = "";
       deck_sub_selections_ = new ArrayList<BitSet>();
-      card_map_ = new HashMap<String, Card>();
-      Deck current_deck = new Deck("unknown");
+      String current_deck_name = "unknown";
+      List<Card> current_deck_cards = new ArrayList<Card>();
       while (next_tag != XmlResourceParser.END_DOCUMENT) {
         if (next_tag == XmlResourceParser.START_TAG) {
           if (lessons.getName().equals("grade")) {
-            if (current_deck.numCards() > 0) {
-              decks_.add(current_deck);
+            if (!current_deck_cards.isEmpty()) {
+              decks.add(new Deck(current_deck_name, current_deck_cards));
               BitSet subsets = new BitSet();
-              subsets.set(0, subsetsForDeckSize(current_deck.numCards()), true);
+              subsets.set(
+                  0, subsetsForDeckSize(current_deck_cards.size()), true);
               deck_sub_selections_.add(subsets);
             }
-            current_deck = new Deck(lessons.getAttributeValue(null, "name"));
+            current_deck_name = lessons.getAttributeValue(null, "name");
+            current_deck_cards.clear();
           } else if (lessons.getName().equals("card")) {
             Map<String, String> allSides = new HashMap<String, String>();
             while ((next_tag = lessons.next()) != XmlResourceParser.END_TAG) {
@@ -344,70 +348,65 @@ public class KanjiFlashcards extends Activity {
               lessons.next(); // </side>
             }
             Card next_card = new Card(allSides);
-            current_deck.addCardToDeck(next_card);
-            card_map_.put(next_card.sides().get("character"), next_card);
+            current_deck_cards.add(next_card);
           } else if (lessons.getName().equals("style")) {
-            StringBuilder style = new StringBuilder();
+            StringBuilder styleBuilder = new StringBuilder();
             while (lessons.next() != XmlResourceParser.END_TAG) {
-              style.append(lessons.getText());
+              styleBuilder.append(lessons.getText());
             }
-            style_ = style.toString();
+            style = styleBuilder.toString();
           } else if (lessons.getName().equals("sideOrder")) {
-            side_order_ = new ArrayList<String>();
             while ((next_tag = lessons.next()) != XmlResourceParser.END_TAG) {
               lessons.next(); // <type>{text}</type>
-              side_order_.add(lessons.getText());
+              side_order.add(lessons.getText());
               lessons.next(); // </type>
             }
           }
         }
         next_tag = lessons.next();
       }
-      if (current_deck.numCards() > 0) {
-        decks_.add(current_deck);
+      if (current_deck_cards.size() > 0) {
+        decks.add(new Deck(current_deck_name, current_deck_cards));
         BitSet subsets = new BitSet();
-        subsets.set(0, subsetsForDeckSize(current_deck.numCards()));
+        subsets.set(0, subsetsForDeckSize(current_deck_cards.size()));
         deck_sub_selections_.add(subsets);
       }
+
+      collection_ = new DeckCollection(side_order, style, decks);
     } catch (IOException e) {
+      throw new RuntimeException(e);
     } catch (XmlPullParserException e) {
+      throw new RuntimeException(e);
     }
   }
-  
+
   public void loadSavedConfiguration() {
+    List<Card> current_deck_cards = new ArrayList<Card>();
     try {
       BufferedReader input_file = new BufferedReader(
           new InputStreamReader(openFileInput("kanji_config")));
       String next_line = input_file.readLine();
       while (next_line != null) {
-        if (next_line.equals("characters")) {
-          while ((next_line != null) && (!next_line.equals("configuration"))) {
-            next_line = input_file.readLine();
-            String[] next_vals = next_line.split(",");
-            if (next_vals.length == 3) {
-              card_map_.get(next_vals[0]).set_total_times_right(Integer.valueOf(next_vals[1]));
-              card_map_.get(next_vals[0]).set_total_times_shown(Integer.valueOf(next_vals[2]));
-            }
-          }
-        }
         if (next_line.equals("configuration")) {
-          current_deck_ = new Deck("current");
-          while ((next_line != null) && (!next_line.equals("characters"))) {
+          current_deck_cards.clear();
+          while (next_line != null) {
             next_line = input_file.readLine();
             if (next_line != null) {
               String[] next_vals = next_line.split(",");
               if (next_vals.length > 1) {
-                for (int i = 0; i < decks_.size(); ++i) {
-                  if (decks_.get(i).name().equals(next_vals[0])) {
+                for (int i = 0; i < collection_.decks().size(); ++i) {
+                  if (collection_.decks().get(i).name().equals(next_vals[0])) {
                     int sub_index = 0;
                     while ((sub_index < deck_sub_selections_.get(i).size()) &&
                         (sub_index + 1 < next_vals.length)) {
                       deck_sub_selections_.get(i).set(
                           sub_index, Boolean.valueOf(next_vals[sub_index + 1]));
                       if (Boolean.valueOf(next_vals[sub_index + 1])) {
-                        for (int k = sub_index * CARDS_PER_SUBSET; (k < (sub_index + 1) * CARDS_PER_SUBSET) && (k < decks_.get(i).numCards()); ++k) {
-                          current_deck_.addCardToDeck(
-                              decks_.get(i).card(k));
+                        for (int k = sub_index * CARDS_PER_SUBSET;
+                            (k < (sub_index + 1) * CARDS_PER_SUBSET) &&
+                            (k < collection_.decks().get(i).cards().size()); ++k) {
+                          current_deck_cards.add(
+                              collection_.decks().get(i).cards().get(k));
                         }
                       }
                       ++sub_index;
@@ -426,11 +425,8 @@ public class KanjiFlashcards extends Activity {
     } catch (IOException e) {
     }
     // at the end of all this, if nothing is selected, select the whole first grade
-    if ((current_deck_ == null) || (current_deck_.numCards() == 0)) {
-      current_deck_ = new Deck("current");
-      for (int i = 0; i < decks_.get(0).numCards(); ++i) {
-        current_deck_.addCardToDeck(decks_.get(0).card(i));
-      }
+    if (current_deck_cards.isEmpty()) {
+      current_deck_cards.addAll(collection_.decks().get(0).cards());
       for (int i = 0; i < deck_sub_selections_.get(0).size(); ++i) {
         deck_sub_selections_.get(0).set(i, true);
       }
@@ -440,30 +436,19 @@ public class KanjiFlashcards extends Activity {
         }
       }
     }
-    
-    current_deck_.setCurrentReviewIndex(current_deck_.numCards());
-    
+
+    current_deck_ = new StudyDeck(current_deck_cards);
+    current_deck_.setCurrentReviewIndex(current_deck_.cards().size());
+
   }
-  
+
   public void saveCurrentConfiguration() {
     try {
       BufferedWriter output_file = new BufferedWriter(
           new OutputStreamWriter(openFileOutput("kanji_config", 0)));
-      output_file.write("characters\n");
-      Iterator<String> it = card_map_.keySet().iterator();
-      while (it.hasNext()) {
-        String kanji = it.next();
-        if (card_map_.get(kanji).total_times_shown() > 0) {
-          Card card_to_save = card_map_.get(kanji);
-          String next_line = kanji + "," +
-              card_to_save.total_times_right() + "," +
-              card_to_save.total_times_shown() + "\n";
-          output_file.write(next_line);
-        }
-      }
       output_file.write("configuration\n");
       for (int i = 0; i < deck_sub_selections_.size(); ++i) {
-        String next_line = decks_.get(i).name();
+        String next_line = collection_.decks().get(i).name();
         for (int j = 0; j < deck_sub_selections_.get(i).size(); ++j) {
           next_line += "," + Boolean.toString(deck_sub_selections_.get(i).get(j));
         }
@@ -474,19 +459,15 @@ public class KanjiFlashcards extends Activity {
     } catch (IOException e) {
     }
   }
-  
+
   private static int subsetsForDeckSize(int deck_size) {
     return (deck_size + CARDS_PER_SUBSET - 1) / CARDS_PER_SUBSET;
   }
-  
+
   private static final int CARDS_PER_SUBSET = 20;
-  private List<String> side_order_;
-  private String style_;
-  private List<Deck> decks_;
+  private DeckCollection collection_;
   private List<BitSet> deck_sub_selections_;
-  private Deck current_deck_;
-  private Map<String, Card> card_map_;
-  
+  private StudyDeck current_deck_;
   boolean move_backwards_ = false;
   boolean study_mode_ = true;
   boolean quiz_mode_ = false;
